@@ -17,6 +17,33 @@
     --blue: #6C98E1;
 }
 
-.col{
-    color: #FF4848;
+/*
+    classes de couleurs
+*/
+.colorBrown{ color: var(--brown); }
+.colorWhite{ color: var(--white); }
+
+.backgroundBlack
+{
+    background-color: var(--black);
+}
+
+
+/*
+    HEADER
+*/
+
+header #telephone{
+    font-weight: bold;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+header #telephone span:nth-child(4){
+    position: relative;
+    font-size:xx-large;
+    top: -7px;
+}
+
+header h1{
+    font-size: 50px;;
 }
