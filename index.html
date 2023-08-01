@@ -9,20 +9,56 @@
     <title>Club Auto</title>
 </head>
 <body>
-    <div class="container">
-        <header class="row backgroundBlack colorWhite py-5 px-3">
-            <p class="col-12 ">
+    <div class="container-fluid">
+        <header class="row backgroundBlack colorWhite pt-5 pb-3 px-0">
+            <p class="col-md-12 d-none d-md-block text-center">
+                <span class="colorWhite h3">CLUB AUTO</span>
+            </p>
+
+            <p class="col-12 d-md-none">
                 <img class="float-end" id="icon-menu" src="images/menu.svg" alt="icon-menu">
             </p>
+
+            <p id="adresse" class="pb-4 d-none d-md-block col-md-3">
+                <img class="float-start pe-2 d-md-none" id="icon-adresse" src="images/icone-adresse.png" alt="icon-adresse">
+                <span class="colorBrown textsmall">ADRESSE:</span> 
+                <br>
+                <span class="colorWhite textsmall">AVENUE CHARLES DE GAULLE</span>
+                <br>
+                <span class="colorWhite textsmall">75000 PARIS</span>
+            </p>
             
-           <p id="telephone" class="col-12 pb-4">
-                <img class="float-start pe-2" id="icon-telephone" src="images/icon-telephone.png" alt="icon-telephone" width="60px">
-                <span class="colorBrown">TÉLÉPHONE:</span> 
+           <p id="telephone" class="col-12 col-md-3 pb-4">
+                <img class="float-start pe-2 d-md-none" id="icon-telephone" src="images/icon-telephone.png" alt="icon-telephone">
+                <span class="colorBrown textsmall">TÉLÉPHONE:</span> 
                 <br>
                 <span class="colorWhite">01 23 45 67 89</span>
             </p>
-            
-            <h1>
+
+            <p id="horaires" class="col-md-4 pb-4 d-none d-md-block">
+                <span class="colorBrown textsmall">Ouverture:</span> 
+                <span class="colorWhite textsmall">Du Lundi au Samedi</span>
+                <br>
+                <span class="colorBrown textsmall">HORAIRES:</span> 
+                <span class="colorWhite textsmall">De 9h à 17h</span>
+            </p>
+
+            <p id="reseaux" class="col-md-2 pb-4 d-none d-md-block">
+                <img class="float-start pe-2" id="icon-telephone" src="images/icon-facebook.png" alt="icon-facebook" width="35px">
+                <img class="float-start pe-2" id="icon-telephone" src="images/icon-twitterx.svg" alt="icon-telephone" width="35px">
+            </p>
+
+            <nav class="col-12 backgroundGrey p-0 d-none d-md-block">
+                <ul class="py-0 pe-5 m-0">
+                    <li class="backgroundBrown colorWhite p-2">ACCUEIL</li>
+                    <li class="backgroundWhite colorBlack p-2">VENTE</li>
+                    <li class="backgroundWhite colorBlack p-2">LOCATION</li>
+                    <li class="backgroundWhite colorBlack p-2">CONTACT</li>
+                </ul>
+            </nav>
+
+            <img class="p-0 d-none d-md-block" id="imageVoiture" src="images/vehicule1.jpg" alt="">
+            <h1 class="backgroundBlack d-md-block">
                 <span class="colorWhite">CLUB AUTO</span> 
                 <span class="colorBrown">LE MEILLEUR DE L'AUTOMOBILE</span>
             </h1>

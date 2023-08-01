@@ -22,11 +22,15 @@
 */
 .colorBrown{ color: var(--brown); }
 .colorWhite{ color: var(--white); }
+.colorBlack{ color: var(--black)}
+.colorGrey{ color: var(--lightGrey)}
 
-.backgroundBlack
-{
-    background-color: var(--black);
-}
+.backgroundBlack{background-color: var(--black);}
+.backgroundWhite{background-color: var(--white);}
+.backgroundBrown{background-color: var(--brown);}
+.backgroundGrey{background-color: var(--lightGrey);}
+
+.textsmall{ font-size:small;}
 
 
 /*
@@ -40,10 +44,25 @@ header #telephone{
 
 header #telephone span:nth-child(4){
     position: relative;
-    font-size:xx-large;
-    top: -7px;
+    font-size: small;
+    top: -6px;
 }
 
 header h1{
-    font-size: 50px;;
+    font-size: 50px;
+}
+
+header ul{
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+
+header li:hover{
+    cursor: pointer;
+    background-color: var(--brown);
+    color: var(--white);
 }
