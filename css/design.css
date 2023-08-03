@@ -30,38 +30,60 @@
 .backgroundBrown{background-color: var(--brown);}
 .backgroundGrey{background-color: var(--lightGrey);}
 
-.textsmall{ font-size:small;}
-
-
+body{
+    font-size: 1rem;
+}
 /*
     HEADER
 */
-
-header #telephone{
-    font-weight: bold;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+header{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
-header #telephone span:nth-child(4){
-    position: relative;
-    font-size: small;
-    top: -6px;
+header .mobile{
+    font-size: 10px;
+    font-weight:700;
+    
+}
+
+header .mobile .labeltelephone{
+    font-size: 2.3em;
+}
+
+header .mobile .notelephone{
+    font-size: 3em;
+    position : relative;
+    top: -7px;
+}
+
+header .desktop #contenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 3;
+    font-size: 0.8em;
+}
+
+header .desktop .icon{
+    width: 40px;
 }
 
 header h1{
-    font-size: 50px;
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
 header ul{
     display: flex;
     justify-content: end;
     list-style-type: none;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: small;
     font-weight: bold;
+    background-color: var(--lightGrey);
 }
 
 header li:hover{
+    background-color: transparent;
     cursor: pointer;
     background-color: var(--brown);
     color: var(--white);
