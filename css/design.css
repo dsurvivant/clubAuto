@@ -33,9 +33,7 @@
 body{
     font-size: 1rem;
 }
-/*
-    HEADER
-*/
+/*  HEADER - 1er bloc - */
 header{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
@@ -87,4 +85,18 @@ header li:hover{
     cursor: pointer;
     background-color: var(--brown);
     color: var(--white);
+}
+
+/*  HEADER - 1er bloc - */
+
+#presentation h2{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size:larger;
+    font-weight: 600;
+}
+
+#presentation p
+{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: x-small;
 }
