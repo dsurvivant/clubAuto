@@ -17,6 +17,24 @@
     --blue: #6C98E1;
 }
 
-.col{
-    color: #FF4848;
+.colorWhite {color:var(--white);}
+.colorYellow{color:var(--yellow);}
+.colorRed{color:var(--red);}
+.colorBrown{color:var(--brown);}
+.colorLightGrey{color:var(--lightGrey);}
+.colorBlack{color:var(--black);}
+.colorBlue{color:var(--blue);}
+.bgBlack{background-color: var(--black);}
+
+.fontTitre{ font-family: 'Montserrat',Arial, Helvetica, sans-serif;}
+.fontTexte{ font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;}
+
+body{
+    font-size: 1rem;;
+}
+
+header{
+    display:grid;
+    grid-template-columns: 1;
+    grid-template-rows: 6;
 }
