@@ -24,7 +24,9 @@
 .colorLightGrey{color:var(--lightGrey);}
 .colorBlack{color:var(--black);}
 .colorBlue{color:var(--blue);}
+
 .bgBlack{background-color: var(--black);}
+.bgBrown{background-color: var(--brown);}
 
 .fontTitre{ font-family: 'Montserrat',Arial, Helvetica, sans-serif;}
 .fontTexte{ font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;}
@@ -34,7 +36,17 @@ body{
 }
 
 header{
-    display:grid;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
     grid-template-columns: 1;
     grid-template-rows: 6;
+}
+
+header .showmd{
+    display: none;
+}
+
+header #btn_burger{
+    align-self: end;
 }
