@@ -9,15 +9,62 @@
 </head>
 <body>
     <header class="bgBlack colorWhite fontTexte">
-        <p class="fontTitre showmd">CLUB AUTO</p>
-        <p class="showmd">Adresse</p>
-        <p id="btn_burger"><img src="images/menu.svg" alt="bouton_sandwich"></p>
-        <p>TÉLÉPHONE</p>
-        <p class="showmd">Ouverture</p>
-        <p class="showmd">Réseaux</p>
-        <nav class="bgBrown">menu</nav>
-        <p><img src="images/vehicule1.jpg" alt=""></p>
-        <h1>CLUB AUTO LE MEILLEUR DE L'AUTOMOBILE</h1>
+        <div id="entete">
+
+            <!-- CLUB AUTO -->
+            <h1 id="entete_titre" class="fontTitre">CLUB AUTO</h1>
+
+            <!-- ADRESSE -->
+            <div id="adresse">
+                <div><img src="images/icone-adresse.png" alt="icon-adresse"></div>
+                <div style="display: flex;flex-direction: column;">
+                    <span class="colorBrown">ADRESSE:</span>
+                    <span>AVENUE CHARLES DE GAULLE</span>
+                    <span>75000 PARIS</span>
+                </div>
+            </div>
+
+            <!-- BOUTON MENU-->
+            <div id="btn_burger" class="hidemd"><img src="images/menu.svg" alt="bouton_sandwich"></div>
+
+            <!-- TELEPHONE-->
+            <div id="telephone">
+                <div><img src="images/icon-telephone.png" alt="icon-telephone"></div>
+                <div style="display: flex;flex-direction: column;">
+                    <span class="colorBrown">TÉLÉPHONE:</span> 
+                    <span>01 23 45 67 89</span>
+                </div>
+            </div>
+
+            <!-- HORAIRES -->
+            <div id="horaires">
+                <span class="colorBrown">OUVERTURE:</span> Du Lundi au Samedi
+                <br>
+                <span class="colorBrown">HORAIRES:</span> De 9h à 17h
+            </div>
+
+            <!-- RESEAUX -->
+            <div id="reseaux">
+                <img src="images/reseaux/icon-facebook.png" alt="logo_facebook">
+                <img src="images/reseaux/icon-twitterx.svg" alt="logo_twitterx">
+            </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <div>
+            <nav class="showmd bgBrown">
+                <ul>
+                    <li>Accueil</li>
+                    <li>Vente</li>
+                    <li>Location</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <img class="showmd" src="images/vehicule1.jpg" alt="">
+        </div>
+
+        <!-- SLOGAN -->
+        <h1>CLUB AUTO <span class="colorBrown">LE MEILLEUR DE L'AUTOMOBILE</span></h1>
     </header>
 </body>
 </html>

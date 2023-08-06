@@ -32,21 +32,52 @@
 .fontTexte{ font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;}
 
 body{
-    font-size: 1rem;;
+    font-size: 1rem;
 }
 
-header{
-    padding: 10px;
-    display:flex;
-    flex-direction: column;
-    grid-template-columns: 1;
-    grid-template-rows: 6;
+header #adresse, header #horaires, header #reseaux{
+        display: none;
 }
 
-header .showmd{
+header #entete_titre{
     display: none;
 }
 
-header #btn_burger{
-    align-self: end;
+@media screen and (min-width: 768px) {
+
+    header #entete{
+        display: flex; 
+        justify-content: center; 
+        align-items: start;
+    }
+
+    header #entete img{
+        width: 40px;
+    }
+
+    header #entete>div{
+        padding: 30px;
+    }
+
+    header #entete_titre{
+        display: block;
+        align-self: center;
+    }
+
+    header #btn_burger{
+        display: none;
+    }
+
+    header img{
+        width: 100%;
+        height: auto;
+    }
+
+    header #adresse, header #telephone{
+        display: flex;
+    }
+
+    header #horaires, header #reseaux{
+        display: block;
+    }
 }
