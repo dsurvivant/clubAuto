@@ -28,92 +28,126 @@
 
 body{
     font-size: 1rem;
-}
-
-/****************/
-/**   HEADER  **/
-/**************/
-header{
-    background-color : var(--black);
-    color: var(--white);
     font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 0.7em;
-    padding-top: 30px;
-    padding-left: 20px;
 }
 
-header #adresse, 
-header #horaires, 
-header #reseaux,
-header nav +img {
-    display: none;
-}
-
-header #entete_titre{
-    display: none;
+h1, h2{
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat',Arial, Helvetica, sans-serif;
-    font-size: 3em;
 }
 
-header #entete img{ width: 60px; }
+/**   HEADER  **/
 
-header #btn_burger{
-    display: flex;
-    justify-content: end;
-    padding: 0 10px;}
+    header{
+        background-color : var(--black);
+        color: var(--white);
+        font-weight: bold;
+        font-size: 0.7em;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
 
-header #telephone{
-    display: flex;
-    font-size: 2em;
+    header #adresse, 
+    header #horaires, 
+    header #reseaux,
+    header nav +img {
+        display: none;
+    }
+
+    header #entete_titre{
+        display: none;
+        font-size: 3em;
+    }
+
+    header #entete img{ width: 60px; }
+
+    header #btn_burger{
+        display: flex;
+        justify-content: end;
+        padding: 0 10px;}
+
+    header #telephone{
+        display: flex;
+        font-size: 2em;
+    }
+
+    header #telephone #numero{
+        font-size: 1.5em;
+    }
+
+    header .detail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav { display: block;}
+
+    header ul{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        background-color: var(--lightGrey);
+        color: var(--black);
+        font-size: 1.6em;
+        right: 0;
+        top: 100px;
+        width:50%
+    }
+
+    header li{
+        padding: 10px;
+    }
+
+    header li:hover{
+        background-color: var(--yellow);
+        color: white;
+        opacity: 1;
+    }
+
+    header #mainTitre{ 
+        font-size: 4em;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+/**   Bloc 2 : Presentation  **/
+
+#presentation{
+    padding: 50px;
+    display: grid;
+    gap: 30px;
 }
 
-header #telephone #numero{
+#presentation img{
+    width: 100%;
+    height: auto;
+}
+
+#presentation h1{
     font-size: 1.5em;
 }
 
-header .detail {
-    display: flex;
-    flex-direction: column;
-}
-
-header nav { display: block;}
-
-header ul{
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    background-color: var(--lightGrey);
+#presentation p{
+    font-size: 0.8em;
+    font-weight: lighter;
     color: var(--black);
-    font-size: 1.6em;
-    right: 0;
-    top: 100px;
-    width:50%
+    line-height: 1.5em;
 }
 
-header li{
-    padding: 10px;
+#presentation strong{
+    font-weight: 700;
 }
 
-header li:hover{
-    background-color: var(--yellow);
-    color: white;
-    opacity: 1;
-}
-
-header h1{ 
-    font-size: 4em;
-    padding-bottom: 30px;
-}
 
 /*********************/
 /**   MEDIA SCREEN  **/
 /*********************/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {   
 
     /**   HEADER  **/
 
@@ -167,14 +201,24 @@ header h1{
     
     header nav +img { display: block; }
 
-    header h1{ 
+    header #mainTitre{ 
         font-size: 3em;
         padding-left: 10px;
+        padding-top: 15px;
     }
-}
+
+/**   Bloc 2 : Presentation  **/
+
+    #presentation{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 50px 200px;
+    }
+} 
+
 
 @media screen and (min-width: 992px) {
-    header h1{ 
+    header #mainTitre{ 
         font-size: 3em;
         padding-left: 15%;
     }
