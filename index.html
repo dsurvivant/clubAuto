@@ -8,16 +8,16 @@
     <title>Club Auto</title>
 </head>
 <body>
-    <header class="bgBlack colorWhite fontTexte">
+    <header>
         <div id="entete">
 
             <!-- CLUB AUTO -->
-            <h1 id="entete_titre" class="fontTitre">CLUB AUTO</h1>
+            <h2 id="entete_titre">CLUB AUTO</h2>
 
             <!-- ADRESSE -->
             <div id="adresse">
                 <div><img src="images/icone-adresse.png" alt="icon-adresse"></div>
-                <div style="display: flex;flex-direction: column;">
+                <div class="detail">
                     <span class="colorBrown">ADRESSE:</span>
                     <span>AVENUE CHARLES DE GAULLE</span>
                     <span>75000 PARIS</span>
@@ -25,14 +25,16 @@
             </div>
 
             <!-- BOUTON MENU-->
-            <div id="btn_burger" class="hidemd"><img src="images/menu.svg" alt="bouton_sandwich"></div>
+            <div id="btn_burger">
+                <img src="images/menu.svg" alt="bouton_sandwich">
+            </div>
 
             <!-- TELEPHONE-->
             <div id="telephone">
                 <div><img src="images/icon-telephone.png" alt="icon-telephone"></div>
-                <div style="display: flex;flex-direction: column;">
+                <div class="detail">
                     <span class="colorBrown">TÉLÉPHONE:</span> 
-                    <span>01 23 45 67 89</span>
+                    <span id="numero">01 23 45 67 89</span>
                 </div>
             </div>
 
@@ -52,15 +54,15 @@
 
         <!-- NAVIGATION -->
         <div>
-            <nav class="showmd bgBrown">
+            <nav>
                 <ul>
-                    <li>Accueil</li>
-                    <li>Vente</li>
-                    <li>Location</li>
-                    <li>Contact</li>
+                    <li>ACCUEIL</li>
+                    <li>VENTE</li>
+                    <li>LOCATION</li>
+                    <li>CONTACT</li>
                 </ul>
             </nav>
-            <img class="showmd" src="images/vehicule1.jpg" alt="">
+            <img src="images/vehicule1.jpg" alt="">
         </div>
 
         <!-- SLOGAN -->

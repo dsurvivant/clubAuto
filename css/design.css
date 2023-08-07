@@ -25,59 +25,154 @@
 .colorBlack{color:var(--black);}
 .colorBlue{color:var(--blue);}
 
-.bgBlack{background-color: var(--black);}
-.bgBrown{background-color: var(--brown);}
-
-.fontTitre{ font-family: 'Montserrat',Arial, Helvetica, sans-serif;}
-.fontTexte{ font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;}
-
 body{
     font-size: 1rem;
 }
 
-header #adresse, header #horaires, header #reseaux{
-        display: none;
+/****************/
+/**   HEADER  **/
+/**************/
+header{
+    background-color : var(--black);
+    color: var(--white);
+    font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 0.7em;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+header #adresse, 
+header #horaires, 
+header #reseaux,
+header nav +img {
+    display: none;
 }
 
 header #entete_titre{
     display: none;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    font-size: 3em;
 }
+
+header #entete img{ width: 60px; }
+
+header #btn_burger{
+    display: flex;
+    justify-content: end;
+    padding: 0 10px;}
+
+header #telephone{
+    display: flex;
+    font-size: 2em;
+}
+
+header #telephone #numero{
+    font-size: 1.5em;
+}
+
+header .detail {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav { display: block;}
+
+header ul{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: var(--lightGrey);
+    color: var(--black);
+    font-size: 1.6em;
+    right: 0;
+    top: 100px;
+    width:50%
+}
+
+header li{
+    padding: 10px;
+}
+
+header li:hover{
+    background-color: var(--yellow);
+    color: white;
+    opacity: 1;
+}
+
+header h1{ 
+    font-size: 4em;
+    padding-bottom: 30px;
+}
+
+/*********************/
+/**   MEDIA SCREEN  **/
+/*********************/
 
 @media screen and (min-width: 768px) {
 
+    /**   HEADER  **/
+
+    header {
+        padding-top: 0;
+        padding-left: 0;
+    }
+
     header #entete{
+        padding-left: 10px;;
         display: flex; 
         justify-content: center; 
         align-items: start;
+        height: 100px;
     }
 
-    header #entete img{
-        width: 40px;
-    }
-
-    header #entete>div{
-        padding: 30px;
-    }
+    header #entete img{ width: 40px; }
+    header #entete>div{ padding: 30px; }
 
     header #entete_titre{
         display: block;
         align-self: center;
     }
 
-    header #btn_burger{
-        display: none;
-    }
+    header #btn_burger{ display: none; }
 
     header img{
         width: 100%;
         height: auto;
     }
 
-    header #adresse, header #telephone{
-        display: flex;
-    }
+    header #adresse { display: flex; }
 
-    header #horaires, header #reseaux{
-        display: block;
+    header #horaires, header #reseaux{ display: block; }
+
+    header #telephone{ font-size: 1em; }
+    
+    header nav {display: block;}
+
+    header ul{
+        flex-direction: row;
+        justify-content: end;
+        padding-right: 50px;
+        font-size: 1.2em;
+        width: 100%;
+        opacity: 0.8;
+        font-weight: 600;
+    }
+    
+    header nav +img { display: block; }
+
+    header h1{ 
+        font-size: 3em;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header h1{ 
+        font-size: 3em;
+        padding-left: 15%;
     }
 }
