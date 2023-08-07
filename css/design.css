@@ -81,7 +81,7 @@ h1, h2{
         flex-direction: column;
     }
 
-    header nav { display: block;}
+    header nav { display: none;}
 
     header ul{
         margin: 0;
@@ -135,14 +135,22 @@ h1, h2{
     font-size: 0.8em;
     font-weight: lighter;
     color: var(--black);
-    line-height: 1.5em;
+    line-height: 20px;
 }
 
 #presentation strong{
     font-weight: 700;
 }
 
+#presentation ul{
+    list-style-image: url("/images/check.png");
+    line-height: 30px;;
+}
 
+#presentation li{
+    font-size: 1.2em;
+    font-weight: 300;
+}
 /*********************/
 /**   MEDIA SCREEN  **/
 /*********************/
@@ -212,7 +220,6 @@ h1, h2{
     #presentation{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        padding: 50px 200px;
     }
 } 
 
