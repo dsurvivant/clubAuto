@@ -149,6 +149,8 @@ header h1{
     header #horaires, header #reseaux{ display: block; }
 
     header #telephone{ font-size: 1em; }
+
+    header #reseaux{display: flex;}
     
     header nav {display: block;}
 
