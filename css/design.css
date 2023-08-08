@@ -5,8 +5,6 @@
     Corps de texte : Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-
-
 :root{
     /* Codes couleur */
     --white: #FFFFFF;
@@ -26,9 +24,18 @@
 .colorBlack{color:var(--black);}
 .colorBlue{color:var(--blue);}
 
+.bgYellow {background-color: var(--yellow);}
+.bgRed {background-color: var(--red);}
+.bgBlack {background-color: var(--black);}
+
 body{
     font-size: 1rem;
     font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+}
+
+img{
+    width: 100%;
+    height: auto;
 }
 
 h1, h2{
@@ -72,9 +79,7 @@ h1, h2{
         font-size: 2em;
     }
 
-    header #telephone #numero{
-        font-size: 1.5em;
-    }
+    header #telephone #numero{ font-size: 1.5em; }
 
     header .detail {
         display: flex;
@@ -98,9 +103,7 @@ h1, h2{
         width:50%
     }
 
-    header li{
-        padding: 10px;
-    }
+    header li{ padding: 10px; }
 
     header li:hover{
         background-color: var(--yellow);
@@ -122,14 +125,7 @@ h1, h2{
     gap: 30px;
 }
 
-#presentation img{
-    width: 100%;
-    height: auto;
-}
-
-#presentation h1{
-    font-size: 1.5em;
-}
+#presentation h1{ font-size: 1.5em; }
 
 #presentation p{
     font-size: 0.8em;
@@ -138,8 +134,12 @@ h1, h2{
     line-height: 20px;
 }
 
-#presentation strong{
-    font-weight: 700;
+#presentation strong{ font-weight: 700; }
+
+#presentation hr{
+    margin: 30px 0;
+    color: var(--lightGrey);
+    opacity: 0.3;
 }
 
 #presentation ul{
@@ -151,6 +151,46 @@ h1, h2{
     font-size: 1.2em;
     font-weight: 300;
 }
+
+/**   Bloc 3 : Vente Location  **/
+#venteLocation{
+    position: relative;
+    background-image: url('/images/vente-location.jpg');
+    background-size: cover;
+    padding-top:60px;
+}
+
+#venteLocation #boiteTexte{
+    display: grid;
+    gap:30px;
+    top: 30px;
+}
+
+#venteLocation #boiteTexte>div{
+    padding: 100px;
+    line-height: 25px;;
+}
+
+#venteLocation #boiteTexte p {
+    font-size: small;
+}
+
+#venteLocation #modelesVoitures{
+    padding: 20px;
+}
+
+#venteLocation #modelesVoitures h2{
+    text-align: center;
+    padding-bottom: 20px;;
+    font-size: 3em;
+}
+
+#venteLocation #listeVoitures{
+    display: grid;
+    border-top: 3px solid var(--brown);
+    padding-top: 30px;
+}
+
 /*********************/
 /**   MEDIA SCREEN  **/
 /*********************/
@@ -221,9 +261,30 @@ h1, h2{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
-} 
 
+/**   Bloc 3 : Vente Location  **/
+#venteLocation #boiteTexte{
+    grid-template-columns: 40% 40%; 
+    grid-template-rows: max-content;
+    gap: 20px;
+    justify-content: center;
+}
 
+#venteLocation #boiteTexte>div{
+    padding: 40px;
+    margin-bottom: 50px;;
+}
+
+#venteLocation #modelesVoitures{
+    padding: 60px 150px;
+}
+
+#venteLocation #listeVoitures{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+}
 @media screen and (min-width: 992px) {
     header #mainTitre{ 
         font-size: 3em;
