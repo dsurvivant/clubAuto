@@ -27,10 +27,30 @@
 .bgYellow {background-color: var(--yellow);}
 .bgRed {background-color: var(--red);}
 .bgBlack {background-color: var(--black);}
+.bgblue {background-color: var(--blue);}
 
 body{
     font-size: 1rem;
     font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+}
+
+.prix {
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding: 0 15px;
+    background-color: var(--blue);
+    color: var(--white);
+    height: 40px;
+
+}
+
+.prixBarre {
+    display: block;
+    text-decoration: line-through;
+    font-size: 0.7em;
+    color:var(--black);
 }
 
 img{
@@ -163,12 +183,11 @@ h1, h2{
 #venteLocation #boiteTexte{
     display: grid;
     gap:30px;
-    top: 30px;
 }
 
 #venteLocation #boiteTexte>div{
     padding: 100px;
-    line-height: 25px;;
+    line-height: 15px;;
 }
 
 #venteLocation #boiteTexte p {
@@ -177,16 +196,19 @@ h1, h2{
 
 #venteLocation #modelesVoitures{
     padding: 20px;
+    background-color: var(--black);
 }
 
 #venteLocation #modelesVoitures h2{
     text-align: center;
     padding-bottom: 20px;;
     font-size: 3em;
+    color: var(--white);
 }
 
 #venteLocation #listeVoitures{
     display: grid;
+    gap:30px;
     border-top: 3px solid var(--brown);
     padding-top: 30px;
 }
@@ -197,9 +219,17 @@ h1, h2{
 }
 
 #venteLocation #listeVoitures > div > div{
-    background-color: gray;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    justify-content: space-around;
+    background-color: rgb(55,60,63);
     color: var(--white);
-    padding: 10px;
+    height: 100px;
+}
+
+#venteLocation #listeVoitures > div > div p{
+    margin: 0 10px;
 }
 
 /*********************/
@@ -283,7 +313,7 @@ h1, h2{
 
 #venteLocation #boiteTexte>div{
     padding: 40px;
-    margin-bottom: 50px;;
+    margin-bottom: 200px;
 }
 
 #venteLocation #modelesVoitures{
@@ -293,6 +323,14 @@ h1, h2{
 #venteLocation #listeVoitures{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+    overflow-y:auto;
+}
+
+#venteLocation #listeVoitures > div > div{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: small;
 }
 
 }
