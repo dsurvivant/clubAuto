@@ -5,8 +5,6 @@
     Corps de texte : Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-
-
 :root{
     /* Codes couleur */
     --white: #FFFFFF;
@@ -26,12 +24,48 @@
 .colorBlack{color:var(--black);}
 .colorBlue{color:var(--blue);}
 
+.bgYellow {background-color: var(--yellow);}
+.bgRed {background-color: var(--red);}
+.bgBlack {background-color: var(--black);}
+.bgblue {background-color: var(--blue);}
+
 body{
     font-size: 1rem;
     font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
 }
 
+
 h1, h2, h3{
+    margin: 0;
+    padding:0;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+.prix {
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding: 0 15px;
+    background-color: var(--blue);
+    color: var(--white);
+    height: 40px;
+
+}
+
+.prixBarre {
+    display: block;
+    text-decoration: line-through;
+    font-size: 0.7em;
+    color:var(--black);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+h1, h2{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat',Arial, Helvetica, sans-serif;
@@ -72,9 +106,7 @@ h1, h2, h3{
         font-size: 2em;
     }
 
-    header #telephone #numero{
-        font-size: 1.5em;
-    }
+    header #telephone #numero{ font-size: 1.5em; }
 
     header .detail {
         display: flex;
@@ -98,9 +130,7 @@ h1, h2, h3{
         width:50%
     }
 
-    header li{
-        padding: 10px;
-    }
+    header li{ padding: 10px; }
 
     header li:hover{
         background-color: var(--yellow);
@@ -142,6 +172,13 @@ h1, h2, h3{
         font-weight: 700;
     }
 
+    #presentation hr{
+        margin: 30px 0;
+        color: var(--lightGrey);
+        opacity: 0.3;
+    }
+
+
     #presentation ul{
         list-style-image: url("/images/check.png");
         line-height: 30px;;
@@ -151,6 +188,68 @@ h1, h2, h3{
         font-size: 1.2em;
         font-weight: 300;
     }
+
+/* bloc3 : vente location */
+#venteLocation{
+    position: relative;
+    background-image: url('/images/vente-location.jpg');
+    background-size: cover;
+    padding-top:60px;
+}
+
+#venteLocation #boiteTexte{
+    display: grid;
+    gap:30px;
+}
+
+#venteLocation #boiteTexte>div{
+    padding: 100px;
+    line-height: 15px;;
+}
+
+#venteLocation #boiteTexte p {
+    font-size: small;
+}
+
+#venteLocation #modelesVoitures{
+    padding: 20px;
+    background-color: var(--black);
+    height: 550px;
+    overflow-y: auto;
+}
+
+#venteLocation #modelesVoitures h2{
+    text-align: center;
+    padding-bottom: 20px;;
+    font-size: 3em;
+    color: var(--white);
+}
+
+#venteLocation #listeVoitures{
+    display: grid;
+    gap:30px;
+    border-top: 3px solid var(--brown);
+    padding-top: 30px;
+}
+
+#venteLocation #listeVoitures > div{
+    display: grid;
+    gap: 20px;
+}
+
+#venteLocation #listeVoitures > div > div{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    justify-content: space-around;
+    background-color: rgb(55,60,63);
+    color: var(--white);
+    height: 100px;
+}
+
+#venteLocation #listeVoitures > div > div p{
+    margin: 0 10px;
+}
 
 /* bloc4 : contactez nous */
     #contacterNous{
@@ -182,8 +281,8 @@ h1, h2, h3{
     #contacterNous button{
         display: block;
         margin: 40px auto;
-        width: 80%;
-        height: 50px;
+        width: 250px;
+        height: 40px;
         border: none;
         border-radius: 5px;;
         background-color: var(--blue);
@@ -191,6 +290,9 @@ h1, h2, h3{
         font-weight:bolder;
         font-size: 1.2em;
     }
+
+
+
 
 /*********************/
 /**   MEDIA SCREEN  **/
@@ -263,22 +365,66 @@ h1, h2, h3{
         grid-template-rows: 1fr 1fr;
     }
 
+/**   Bloc 3 : Vente Location  **/
+#venteLocation #boiteTexte{
+    grid-template-columns: 40% 40%; 
+    grid-template-rows: max-content;
+    gap: 20px;
+    justify-content: center;
+}
 
 /** Bloc 4 : Contactez nous **/
 
-#contacterNous > div{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    #contacterNous > div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: 70%;
+        font-size: small;
+        margin: auto;
+    }
+} 
+
+#venteLocation #boiteTexte>div{
+    padding: 40px;
+    margin-bottom: 200px;
+}
+
+#venteLocation #modelesVoitures{
+    padding: 60px 150px;
+}
+
+#venteLocation #listeVoitures{
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    width: 70%;
-    margin: auto;
+    overflow-y:auto;
+}
+
+#venteLocation #listeVoitures > div > div{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     font-size: small;
 }
-} 
+
+}
 
 @media screen and (min-width: 992px) {
     header #mainTitre{ 
         font-size: 3em;
         padding-left: 15%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    /** Bloc 4 : Contactez nous **/
+
+    #contacterNous > div{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        width: 80%;
+        font-size: small;
+        margin: auto;
     }
 }
