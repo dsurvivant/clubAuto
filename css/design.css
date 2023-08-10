@@ -197,6 +197,8 @@ h1, h2{
 #venteLocation #modelesVoitures{
     padding: 20px;
     background-color: var(--black);
+    height: 550px;
+    overflow-y: auto;
 }
 
 #venteLocation #modelesVoitures h2{
