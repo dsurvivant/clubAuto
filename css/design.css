@@ -71,7 +71,7 @@ h1, h2{
     font-family: 'Montserrat',Arial, Helvetica, sans-serif;
 }
 
-/**   HEADER  **/
+/**   bloc1 - HEADER  **/
 
     header{
         background-color : var(--black);
@@ -190,66 +190,66 @@ h1, h2{
     }
 
 /* bloc3 : vente location */
-#venteLocation{
-    position: relative;
-    background-image: url('/images/vente-location.jpg');
-    background-size: cover;
-    padding-top:60px;
-}
+    #venteLocation{
+        position: relative;
+        background-image: url('/images/vente-location.jpg');
+        background-size: cover;
+        padding-top:60px;
+    }
 
-#venteLocation #boiteTexte{
-    display: grid;
-    gap:30px;
-}
+    #venteLocation #boiteTexte{
+        display: grid;
+        gap:30px;
+    }
 
-#venteLocation #boiteTexte>div{
-    padding: 100px;
-    line-height: 15px;;
-}
+    #venteLocation #boiteTexte>div{
+        padding: 100px;
+        line-height: 15px;;
+    }
 
-#venteLocation #boiteTexte p {
-    font-size: small;
-}
+    #venteLocation #boiteTexte p {
+        font-size: small;
+    }
 
-#venteLocation #modelesVoitures{
-    padding: 20px;
-    background-color: var(--black);
-    height: 550px;
-    overflow-y: auto;
-}
+    #venteLocation #modelesVoitures{
+        padding: 20px;
+        background-color: var(--black);
+        height: 550px;
+        overflow-y: auto;
+    }
 
-#venteLocation #modelesVoitures h2{
-    text-align: center;
-    padding-bottom: 20px;;
-    font-size: 3em;
-    color: var(--white);
-}
+    #venteLocation #modelesVoitures h2{
+        text-align: center;
+        padding-bottom: 20px;;
+        font-size: 3em;
+        color: var(--white);
+    }
 
-#venteLocation #listeVoitures{
-    display: grid;
-    gap:30px;
-    border-top: 3px solid var(--brown);
-    padding-top: 30px;
-}
+    #venteLocation #listeVoitures{
+        display: grid;
+        gap:30px;
+        border-top: 3px solid var(--brown);
+        padding-top: 30px;
+    }
 
-#venteLocation #listeVoitures > div{
-    display: grid;
-    gap: 20px;
-}
+    #venteLocation #listeVoitures > div{
+        display: grid;
+        gap: 20px;
+    }
 
-#venteLocation #listeVoitures > div > div{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: start;
-    justify-content: space-around;
-    background-color: rgb(55,60,63);
-    color: var(--white);
-    height: 100px;
-}
+    #venteLocation #listeVoitures > div > div{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        justify-content: space-around;
+        background-color: rgb(55,60,63);
+        color: var(--white);
+        height: 100px;
+    }
 
-#venteLocation #listeVoitures > div > div p{
-    margin: 0 10px;
-}
+    #venteLocation #listeVoitures > div > div p{
+        margin: 0 10px;
+    }
 
 /* bloc4 : contactez nous */
     #contacterNous{
@@ -291,14 +291,12 @@ h1, h2{
         font-size: 1.2em;
     }
 
-
-
-
 /*********************/
 /**   MEDIA SCREEN  **/
 /*********************/
 
-@media screen and (min-width: 768px) {   
+@media screen and (min-width: 768px) 
+{   
 
     /**   HEADER  **/
 
@@ -366,12 +364,34 @@ h1, h2{
     }
 
 /**   Bloc 3 : Vente Location  **/
-#venteLocation #boiteTexte{
-    grid-template-columns: 40% 40%; 
-    grid-template-rows: max-content;
-    gap: 20px;
-    justify-content: center;
-}
+    #venteLocation #boiteTexte{
+        grid-template-columns: 40% 40%; 
+        grid-template-rows: max-content;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    #venteLocation #boiteTexte>div{
+        padding: 40px;
+        margin-bottom: 200px;
+    }
+
+    #venteLocation #modelesVoitures{
+        padding: 60px 150px;
+    }
+
+    #venteLocation #listeVoitures{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        overflow-y:auto;
+    }
+
+    #venteLocation #listeVoitures > div > div{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: small;
+    }
 
 /** Bloc 4 : Contactez nous **/
 
@@ -383,30 +403,6 @@ h1, h2{
         font-size: small;
         margin: auto;
     }
-} 
-
-#venteLocation #boiteTexte>div{
-    padding: 40px;
-    margin-bottom: 200px;
-}
-
-#venteLocation #modelesVoitures{
-    padding: 60px 150px;
-}
-
-#venteLocation #listeVoitures{
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    overflow-y:auto;
-}
-
-#venteLocation #listeVoitures > div > div{
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-size: small;
-}
-
 }
 
 @media screen and (min-width: 992px) {
