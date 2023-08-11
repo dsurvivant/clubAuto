@@ -14,6 +14,7 @@
     --lightGrey: #ECEFF3;
     --black: #232628;
     --blue: #6C98E1;
+    --grey: color: rgb(143, 143, 143)
 }
 
 .colorWhite {color:var(--white);}
@@ -32,7 +33,6 @@
 body{
     font-size: 1rem;
     font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
-    padding: 0 40px;
 }
 
 
@@ -41,6 +41,8 @@ h1, h2, h3{
     padding:0;
     font-family: 'Montserrat',Arial, Helvetica, sans-serif;
 }
+
+em { color: var(--brown); font-style: normal;}
 
 .prix {
     display:flex;
@@ -163,9 +165,7 @@ img{
         line-height: 20px;
     }
 
-    #presentation strong{
-        font-weight: 700;
-    }
+    #presentation strong{ font-weight: 700; }
 
     #presentation hr{
         margin: 30px 0;
@@ -197,10 +197,16 @@ img{
         gap:30px;
     }
 
-    #venteLocation #boiteTexte>div{
+    #venteLocation #boiteTexte div{
         padding: 100px;
-        line-height: 15px;;
+        line-height: 15px;
+        color: var(--white);
+        background-color: var(--red);
     }
+
+    #venteLocation #boiteTexte div:first-child{ background-color: var(--yellow);}
+
+    #venteLocation #boiteTexte div h2 {color:var(--black);}
 
     #venteLocation #boiteTexte p {
         font-size: small;
@@ -209,8 +215,7 @@ img{
     #venteLocation #modelesVoitures{
         padding: 20px;
         background-color: var(--black);
-        height: 550px;
-        overflow-y: auto;
+        
     }
 
     #venteLocation #modelesVoitures h2{
@@ -225,6 +230,8 @@ img{
         gap:30px;
         border-top: 3px solid var(--brown);
         padding-top: 30px;
+        height: 400px;
+        overflow-y: auto;
     }
 
     #venteLocation #listeVoitures > div{
@@ -270,7 +277,7 @@ img{
     }
 
     #contacterNous > div > div p{
-        color: rgb(143, 143, 143)
+        color: var(--grey)
     }
 
     #contacterNous button{
@@ -286,12 +293,81 @@ img{
         font-size: 1.2em;
     }
 
+/** bloc5 : footer **/
+
+    footer {
+        background-image: url("/images/vehicule3.jpg");
+        background-size: cover;
+        background-position: 45% top;
+        color: var(--white);
+        font-size: 1.1em;
+    }
+
+    footer article {
+        position: relative;
+        padding: 40px;
+        top: 100px;
+        opacity: 0.9;
+        background-color: var(--yellow);
+        color: var(--white);
+    }
+
+    footer article h2 { font-size: 2em; }
+    footer article h2:first-child {color: var(--black);}
+
+    footer article p { color:var(--black); }
+
+    footer #bottomFooter{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 150px;
+        color: var(--white);
+        background-color: var(--black);
+        padding: 20px;
+    }
+
+    footer #bottomFooter div{
+        padding-bottom: 30px;;
+    }
+
+    footer #bottomFooter div:first-child span{
+        color: var(--blue);
+    }
+
+    footer #bottomFooter p{
+        color: grey;
+        line-height: 20px;
+        font-size: 1.1em;
+    }
+
+    footer #newsletter form {
+        display: grid;
+        grid-template-columns: 1fr 50px;
+        margin-top: 20px;
+        height: 50px;
+    }
+
+    footer #newsletter form button,
+    footer #newsletter form input
+    { border: none; padding: 0;}
+
+    footer #newsletter img{
+        height: 100%;
+    }
+
+    footer #newsletter p { margin-top: 5px;}
+
+
 /*********************/
 /**   MEDIA SCREEN  **/
 /*********************/
 
 @media screen and (min-width: 768px) 
 {   
+    body {
+        padding: 0 40px;
+    }
 
     /**   HEADER  **/
 
@@ -396,6 +472,26 @@ img{
         width: 70%;
         font-size: small;
         margin: auto;
+    }
+
+/** bloc5 : footer **/
+
+    footer article {
+        padding: 40px;
+        width: 35%;
+        top: 60px;
+        left: 10%;
+        opacity: 0.9;
+    }
+
+    footer #bottomFooter{
+        flex-direction: row;
+        position: relative;
+        top: 140px;
+    }
+
+    footer #bottomFooter div:first {
+        color: red;
     }
 }
 

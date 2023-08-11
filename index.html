@@ -18,7 +18,7 @@
             <div id="adresse">
                 <div><img src="images/icone-adresse.png" alt="icon-adresse"></div>
                 <div class="detail">
-                    <span class="colorBrown">ADRESSE:</span>
+                    <em>ADRESSE:</em>
                     <span>AVENUE CHARLES DE GAULLE</span>
                     <span>75000 PARIS</span>
                 </div>
@@ -33,16 +33,16 @@
             <div id="telephone">
                 <div><img src="images/icon-telephone.png" alt="icon-telephone"></div>
                 <div class="detail">
-                    <span class="colorBrown">TÉLÉPHONE:</span> 
+                    <em>TÉLÉPHONE:</em> 
                     <span id="numero">01 23 45 67 89</span>
                 </div>
             </div>
 
             <!-- HORAIRES -->
             <div id="horaires">
-                <span class="colorBrown">OUVERTURE:</span> Du Lundi au Samedi
+                <em>OUVERTURE:</em> Du Lundi au Samedi
                 <br>
-                <span class="colorBrown">HORAIRES:</span> De 9h à 17h
+                <em>HORAIRES:</em> De 9h à 17h
             </div>
 
             <!-- RESEAUX -->
@@ -66,14 +66,14 @@
         </div>
 
         <!-- SLOGAN -->
-        <h1 id="mainTitre">CLUB AUTO <span class="colorBrown">LE MEILLEUR DE L'AUTOMOBILE</span></h1>
+        <h1 id="mainTitre">CLUB AUTO <em>LE MEILLEUR DE L'AUTOMOBILE</em></h1>
     </header>
 
     <section id="presentation">
         <img src="images/clients.jpg" alt="happyClients">
 
         <div>
-            <h1>BIENVENUE CHEZ <span class="colorBrown">CLUB AUTO</span></h1>
+            <h1>BIENVENUE CHEZ <em>CLUB AUTO</em></h1>
             <p>
                 <strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, voluptate. Deserunt inventore laboriosam voluptas eveniet libero veniam, quidem dolore?</strong>
             </p>
@@ -104,13 +104,13 @@
 
     <section id="venteLocation">
         <div id="boiteTexte">
-            <div class="bgYellow colorWhite">
-                <h2 class="colorBlack">Vous souhaitez louer ?</h2>
+            <div>
+                <h2>Vous souhaitez louer ?</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, minus dicta aspernatur aut reprehenderit facere magni eaque nesciunt a debitis voluptatibus? Ducimus, vero. Quia fugit, at similique optio dolores quisquam perferendis sit aperiam! Accusamus, ducimus hic.</p>
             </div>
 
-            <div class="bgRed colorWhite">
-                <h2 class="colorBlack">Vous souhaitez acheter ?</h2>
+            <div>
+                <h2>Vous souhaitez acheter ?</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, minus dicta aspernatur aut reprehenderit facere magni eaque nesciunt a debitis voluptatibus? Ducimus, vero. Quia fugit, at similique optio dolores quisquam perferendis sit aperiam! Accusamus, ducimus hic.</p>
             </div>
         </div>
@@ -204,19 +204,53 @@
 
     </section>
 
-    <section>
-        <img src="images/vehicule3.jpg" alt="">
-
-        <div class="bgYellow colorWhite">
-            <h2 class="colorBlack">CLUB AUTO</h2>
-            <h2 class="colorWhite">VENTE ET LOCATION</h2>
+    <footer>
+        <article>
+            <h2>CLUB AUTO</h2>
+            <h2>VENTE ET LOCATION</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, minus dicta aspernatur aut reprehenderit facere magni eaque nesciunt a debitis voluptatibus? Ducimus, vero. Quia fugit, at similique optio dolores quisquam perferendis sit aperiam! Accusamus, ducimus hic.</p>
-        </div>
+        </article>
 
-        <footer class="colorWhite bgBlack" style="height: 200px;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur temporibus aspernatur nesciunt impedit ratione qui laborum iste in, eos, aliquam maiores fugiat voluptatibus repellendus. Enim illo omnis assumenda hic amet, ipsa explicabo in corrupti! Quam est error facilis sapiente qui.</p>
-        </footer>
-    </section>
+        <div id="bottomFooter">
+            <div>
+                <h3><span>CLUB</span> AUTO</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error et similique enim possimus cupiditate! Illum provident aspernatur adipisci obcaecati.
+                </p>
+            </div>
+
+            <div id="horaires">
+                <h3>HORAIRES D'OUVERTURE</h3>
+                <p>
+                    Lundi-Samedi: <span>09h00-17h00</span>
+                    <br>
+                    Dimanche et jours fériés: <span>Fermé</span>
+                </p>
+            </div>
+
+            <div id="newsletter">
+                <h3>NEWSLETTER</h3>
+                
+                    <form action="#">
+                        <input type="text" placeholder="Entre votre email" name="email">
+                        <button><img src="/images/btnNewsLetter.png" 
+                            alt="Button Newsletter"></button>
+                    </form>
+                <p>inscrivez-vous pour recevoir les dernières offres</p>
+            </div>
+
+            <div>
+                <h3>RESEAUX SOCIAUX</h3>
+                <p>
+                    <img src="/images/reseaux/icon-facebook2.png" alt="facebook" style="width: 40px;">
+                    <img src="/images/reseaux/icon-twitter.png" alt="twitter" style="width: 40px;">
+                    <img src="/images/reseaux/icon-instagram.png" alt="instagram" style="width: 40px;">
+                    <img src="/images/reseaux/icon-google.png" alt="google" style="width: 40px;">
+                    <img src="/images/reseaux/icon-youtube.png" alt="youtube" style="width: 40px;">
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
