@@ -110,7 +110,7 @@ img{
         color: var(--black);
         font-size: 1.6em;
         right: 0;
-        top: 100px;
+        top: 150px;
         width:50%
     }
 
@@ -163,7 +163,7 @@ img{
 
     #presentation ul{
         list-style-image: url("/images/check.png");
-        line-height: 30px;;
+        line-height: 30px;
     }
 
     #presentation li{
@@ -207,7 +207,7 @@ img{
 
     #venteLocation #modelesVoitures h2{
         text-align: center;
-        padding-bottom: 20px;;
+        padding-bottom: 20px;
         font-size: 3em;
         color: var(--white);
     }
@@ -246,7 +246,7 @@ img{
     }
 
     #contacterNous h2{
-        padding-bottom: 100px;;
+        padding-bottom: 100px;
         font-size: 2em;
         text-align: center;
     }
@@ -273,7 +273,7 @@ img{
         width: 250px;
         height: 40px;
         border: none;
-        border-radius: 5px;;
+        border-radius: 5px;
         background-color: var(--blue);
         color: var(--white);
         font-weight:bolder;
@@ -343,8 +343,6 @@ img{
     }
 
     footer #footerCopyright{
-        position: relative;
-        top: 2à0px;
         font-size: 0.8em;
         color: var(--grey);
         border-top: 2px solid var(--grey);
@@ -357,10 +355,6 @@ img{
 
 @media screen and (min-width: 768px) 
 {   
-    body {
-        padding: 0 40px;
-    }
-
     /**   HEADER  **/
 
         header {
@@ -369,11 +363,11 @@ img{
         }
 
         header #entete{
-            padding-left: 10px;;
+            padding-left: 10px;
             display: flex; 
             justify-content: center; 
-            align-items: start;
-            height: 100px;
+            align-items: center;
+            height: 150px;
         }
 
         header #entete img{ width: 40px; }
@@ -442,12 +436,6 @@ img{
         padding: 60px 150px;
     }
 
-    #venteLocation #listeVoitures{
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 30px;
-        overflow-y:auto;
-    }
-
     #venteLocation #listeVoitures > div > div{
         flex-direction: row;
         justify-content: space-around;
@@ -461,9 +449,7 @@ img{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
-        width: 70%;
         font-size: small;
-        margin: auto;
     }
 
 /** bloc5 : footer **/
@@ -479,15 +465,21 @@ img{
     footer #bottomFooter{
         top: 140px;
         padding: 50px 100px 0 100px;
+        font-size: small;
     }
-
-    footer #bottomFooter { font-size: small;}
 
 }
 
 @media screen and (min-width: 992px) {
     header #mainTitre{ 
         padding-left: 15%;
+    }
+
+    #venteLocation #listeVoitures{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        overflow-y:auto;
+        align-items:start;
     }
 
     footer #bottomFooter{
@@ -511,8 +503,6 @@ img{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
-        width: 80%;
         font-size: small;
-        margin: auto;
     }
 }
