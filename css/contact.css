@@ -1,0 +1,34 @@
+#formContact{
+    position: relative;
+    top: 150px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 0 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#formContact h1{
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+#formContact label{
+    padding-bottom: 10px;
+    font-size: 1em;
+}
+
+#formContact input{
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 30px;;
+    background-color: var(--lightGrey);
+    border: none;
+}
+
+
+
+footer{
+    background-image: none;
+}

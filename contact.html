@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Club Auto</title>
+</head>
+<body>
+    <header>
+        <div id="entete">
+
+            <!-- CLUB AUTO -->
+            <h2 id="entete_titre">CLUB AUTO</h2>
+
+            <!-- ADRESSE -->
+            <div id="adresse">
+                <div><img src="images/icone-adresse.png" alt="icon-adresse"></div>
+                <div class="detail">
+                    <em>ADRESSE:</em>
+                    <span>AVENUE CHARLES DE GAULLE</span>
+                    <span>75000 PARIS</span>
+                </div>
+            </div>
+
+            <!-- BOUTON MENU-->
+            <div id="btn_burger">
+                <img src="images/menu.svg" alt="bouton_sandwich">
+            </div>
+
+            <!-- TELEPHONE-->
+            <div id="telephone">
+                <div><img src="images/icon-telephone.png" alt="icon-telephone"></div>
+                <div class="detail">
+                    <em>TÉLÉPHONE:</em> 
+                    <span id="numero">01 23 45 67 89</span>
+                </div>
+            </div>
+
+            <!-- HORAIRES -->
+            <div id="horaires">
+                <em>OUVERTURE:</em> Du Lundi au Samedi
+                <br>
+                <em>HORAIRES:</em> De 9h à 17h
+            </div>
+
+            <!-- RESEAUX -->
+            <div id="reseaux">
+                <img src="images/reseaux/icon-facebook.png" alt="logo_facebook">
+                <img src="images/reseaux/icon-twitterx.svg" alt="logo_twitterx">
+            </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li>VENTE</li>
+                    <li>LOCATION</li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div style="position: absolute; width: 100%; height: 400px;overflow: hidden;">
+        <img src="/images/vehicule3.jpg" 
+    alt=""
+    style="position: relative;right: 200px; height: 500px; width: auto;"
+    >
+    </div>
+
+    <form id="formContact" action="#" method="get">
+        <h1>CONTACTEZ NOUS</h1>
+        <label for="prenom">Prénom</label>
+        <input type="text" placeholder="Entrez votre prénom" name="prenom">
+
+        <label for="nom">Nom</label>  
+        <input type="text" placeholder="Entré votre nom" name="nom">
+
+        <label for="email">Email</label>
+        <input type="text" placeholder="Entrez une adresse mail valide" name=""email>
+
+        <label for="telephone">Téléphone</label>
+        <input type="text" placeholder=" Phone number" name="telephone">
+
+        <label for="message">Message</label>
+        <textarea name="message" cols="30" rows="10"></textarea>
+        
+        <button class="button" type="submit">Envoyez</button>
+    </form>
+
+    <footer>
+        <div id="bottomFooter">
+            <div>
+                <h3><span>CLUB</span> AUTO</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error et similique enim possimus cupiditate! Illum provident aspernatur adipisci obcaecati.
+                </p>
+            </div>
+
+            <div id="footerhoraires">
+                <h3>HORAIRES D'OUVERTURE</h3>
+                <p>
+                    Lundi-Samedi: <span>09h00-17h00</span>
+                    <br>
+                    Dimanche et jours fériés: <span>Fermé</span>
+                </p>
+            </div>
+
+            <div id="footerNewsletter">
+                <h3>NEWSLETTER</h3>
+                
+                    <form action="#">
+                        <input type="text" placeholder="Entrez votre email" name="email">
+                        <button><img src="/images/btnNewsLetter.png" 
+                            alt="Button Newsletter"></button>
+                    </form>
+                <p>inscrivez-vous pour recevoir les dernières offres</p>
+            </div>
+
+            <div>
+                <h3>RESEAUX SOCIAUX</h3>
+                <p>
+                    <img src="/images/reseaux/icon-facebook2.png" alt="facebook" style="width: 40px;">
+                    <img src="/images/reseaux/icon-twitter.png" alt="twitter" style="width: 40px;">
+                    <img src="/images/reseaux/icon-instagram.png" alt="instagram" style="width: 40px;">
+                    <img src="/images/reseaux/icon-google.png" alt="google" style="width: 40px;">
+                    <img src="/images/reseaux/icon-youtube.png" alt="youtube" style="width: 40px;">
+                </p>
+            </div>
+
+            <div id="footerCopyright">
+                <p>Copyright © Club Auto - Tous droits réservés</p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
