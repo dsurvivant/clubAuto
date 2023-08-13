@@ -27,8 +27,19 @@
     border: none;
 }
 
+#formContact textarea{
+    background-color: var(--lightGrey);
+    resize: none;
+}
 
+#formContact button{
+    margin-top: 30px;
+    width: 60%;
+    height: 50px;
+}
 
 footer{
+    position:relative;
+    top: 150px;
     background-image: none;
 }
