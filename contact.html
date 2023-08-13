@@ -69,31 +69,43 @@
 
     <div style="position: absolute; width: 100%; height: 400px;overflow: hidden;">
         <img src="/images/vehicule3.jpg" 
-    alt=""
-    style="position: relative;right: 200px; height: 500px; width: auto;"
+    alt="vehicule"
+    style="display:block; width: 100%;"
     >
     </div>
 
+    <h1>CONTACTEZ NOUS</h1> 
+    
     <form id="formContact" action="#" method="get">
+        <section id="sectionCoordonnees">
+            <div>
+                <label for="prenom">Prénom*</label>
+                <input type="text" placeholder="Entrez votre prénom" name="prenom">
+            </div>
 
-        <h1>CONTACTEZ NOUS</h1>
+            <div>
+                <label for="nom">Nom*</label>
+                <input type="text" placeholder="Entrez votre nom" name="nom">
+            </div>
+            
+            <div>
+                <label for="email">Email*</label>
+                <input type="text" placeholder="Entrez une adresse mail valide" name=""email>
+            </div>
+
+            <div>
+                <label for="telephone">Téléphone</label>
+                <input type="text" placeholder=" Phone number" name="telephone">
+            </div>
+        </section>
         
-        <label for="prenom">Prénom*</label>
-        <input type="text" placeholder="Entrez votre prénom" name="prenom">
-
-        <label for="nom">Nom*</label>  
-        <input type="text" placeholder="Entré votre nom" name="nom">
-
-        <label for="email">Email*</label>
-        <input type="text" placeholder="Entrez une adresse mail valide" name=""email>
-
-        <label for="telephone">Téléphone</label>
-        <input type="text" placeholder=" Phone number" name="telephone">
-
-        <label for="message">Message</label>
-        <textarea name="message" cols="30" rows="10"></textarea>
+        <section id="sectionMessage">
+            <label for="message">Message</label>
+            <textarea name="message" cols="30" rows="10"></textarea>
+            
+            <button class="button" type="submit">Envoyez</button>
+        </section>
         
-        <button class="button" type="submit">Envoyez</button>
     </form>
 
     <footer>

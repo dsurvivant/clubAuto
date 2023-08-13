@@ -5,7 +5,8 @@
     display: flex;
     flex-direction: column;
     padding: 40px;
-    margin: 0 20px;
+    margin: Auto;
+    width: 60%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -30,6 +31,7 @@
 #formContact textarea{
     background-color: var(--lightGrey);
     resize: none;
+    border: none;
 }
 
 #formContact button{
@@ -42,4 +44,40 @@ footer{
     position:relative;
     top: 150px;
     background-image: none;
+}
+
+/**  MEDIA QUERIES **/
+@media screen and (min-width: 768px) {
+   #formContact{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    font-size: small;
+   }
+
+   #formContact #sectionCoordonnees{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+   }
+
+   #formContact #sectionCoordonnees > div{
+     display: flex;
+     flex-direction: column;
+   }
+
+   #formContact #sectionMessage{
+    display: flex;
+    flex-direction: column;
+   }
+    
+} /*@media 768*/
+@media screen and (min-width: 1200px) {
+    #formContact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: small;
+        gap: 10px;
+       }
 }
