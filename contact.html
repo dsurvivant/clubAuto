@@ -67,46 +67,46 @@
 
     </header>
 
-    <div style="position: absolute; width: 100%; height: 400px;overflow: hidden;">
-        <img src="/images/vehicule3.jpg" 
-    alt="vehicule"
-    style="display:block; width: 100%;"
-    >
-    </div>
+    <div id="backgroundImage">
+        <img src="/images/vehicule3.jpg" alt="vehicule">
+    </div> 
 
-    <h1>CONTACTEZ NOUS</h1> 
-    
-    <form id="formContact" action="#" method="get">
-        <section id="sectionCoordonnees">
-            <div>
-                <label for="prenom">Prénom*</label>
-                <input type="text" placeholder="Entrez votre prénom" name="prenom">
-            </div>
+    <section id="cadreContact">
+        <h1>CONTACTEZ NOUS</h1>
 
-            <div>
-                <label for="nom">Nom*</label>
-                <input type="text" placeholder="Entrez votre nom" name="nom">
-            </div>
+        <form id="formContact" action="#" method="get">
+
+            <section id="sectionCoordonnees">
+                <div>
+                    <label for="prenom">Prénom*</label>
+                    <input id="prenom" type="text" placeholder="Entrez votre prénom" name="prenom">
+                </div>
+
+                <div>
+                    <label for="nom">Nom*</label>
+                    <input id="nom" type="text" placeholder="Entrez votre nom" name="nom">
+                </div>
+                
+                <div>
+                    <label for="email">Email*</label>
+                    <input id="email" type="text" placeholder="Entrez une adresse mail valide" name="email">
+                </div>
+
+                <div>
+                    <label for="phoneNumber">Téléphone</label>
+                    <input id="phoneNumber" type="number" placeholder=" Phone number" name="phoneNumber">
+                </div>
+            </section>
             
-            <div>
-                <label for="email">Email*</label>
-                <input type="text" placeholder="Entrez une adresse mail valide" name=""email>
-            </div>
-
-            <div>
-                <label for="telephone">Téléphone</label>
-                <input type="text" placeholder=" Phone number" name="telephone">
-            </div>
-        </section>
-        
-        <section id="sectionMessage">
-            <label for="message">Message</label>
-            <textarea name="message" cols="30" rows="10"></textarea>
+            <section id="sectionMessage">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+            </section>
             
             <button class="button" type="submit">Envoyez</button>
-        </section>
-        
-    </form>
+        </form>
+    </section>
+    
 
     <footer>
         <div id="bottomFooter">
@@ -130,7 +130,7 @@
                 <h3>NEWSLETTER</h3>
                 
                     <form action="#">
-                        <input type="text" placeholder="Entrez votre email" name="email">
+                        <input type="text" placeholder="Entrez votre email" name="emailNewsletter">
                         <button><img src="/images/btnNewsLetter.png" 
                             alt="Button Newsletter"></button>
                     </form>

@@ -1,43 +1,68 @@
-#formContact{
+#backgroundImage{
+    position: absolute;
+    width: 100%; 
+    height: 400px;
+    overflow: hidden;
+    z-index: -1000;
+}
+
+/**
+#backgroundImage img {
+    display:block; width: 100%;
+}**/
+
+#cadreContact{
     position: relative;
     top: 150px;
     background-color: white;
-    display: flex;
-    flex-direction: column;
     padding: 40px;
     margin: Auto;
     width: 60%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-#formContact h1{
-    margin-bottom: 50px;
-    font-weight: 500;
+#cadreContact h1{
+    margin-bottom:40px;
+    font-size: 2em;
+    font-weight: 600;
 }
 
-#formContact label{
-    padding-bottom: 10px;
-    font-size: 1em;
+#formContact{
+    display: grid;
+    gap: 60px;
 }
+
+#formContact #sectionCoordonnees {
+    display: grid;
+}
+
+#formContact #sectionCoordonnees > div,
+#formContact #sectionMessage { 
+    display: flex;
+    flex-direction: column;
+   }
 
 #formContact input{
     height: 50px;
     padding-left: 20px;
-    margin-bottom: 30px;;
+    margin-bottom: 30px;
     background-color: var(--lightGrey);
     border: none;
+    margin-top: 10px;
 }
 
 #formContact textarea{
     background-color: var(--lightGrey);
     resize: none;
     border: none;
+    height: 200px;
+    margin-top: 10px;
 }
 
 #formContact button{
-    margin-top: 30px;
     width: 60%;
     height: 50px;
+    font-weight: 600;
 }
 
 footer{
@@ -49,35 +74,48 @@ footer{
 /**  MEDIA QUERIES **/
 @media screen and (min-width: 768px) {
    #formContact{
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     font-size: small;
+    gap: 20px;
+   }
+
+   #formContact button{
+    justify-self: center;
    }
 
    #formContact #sectionCoordonnees{
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
    }
 
-   #formContact #sectionCoordonnees > div{
-     display: flex;
-     flex-direction: column;
+   #formContact #sectionCoordonnees input{
+    margin-bottom:0;
    }
 
-   #formContact #sectionMessage{
-    display: flex;
-    flex-direction: column;
-   }
+   #formContact #sectionMessage textarea{
+    flex-grow: 2;
+    margin-top: 10px;
+    height: auto;
+    }
     
 } /*@media 768*/
+
 @media screen and (min-width: 1200px) {
     #formContact{
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
         font-size: small;
         gap: 10px;
        }
-}
+
+    #formContact button{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: start;
+    }
+
+} /*media 1200px*/
