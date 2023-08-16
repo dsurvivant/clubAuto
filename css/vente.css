@@ -1,0 +1,91 @@
+
+#backgroundImage{
+    position: relative;
+    width: 100%; 
+    overflow: hidden;
+    z-index: -1000;
+}
+
+/** sectionRecherche **/
+
+    #sectionRecherche{
+        display: flex;
+        flex-direction: column;
+        width:90%;
+        margin:auto;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #sectionRecherche #header{
+        position: relative;
+        top: -40px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        justify-items: left;
+        align-items: center;
+        padding: 20px 0;;
+        background-color: var(--black);
+        color: var(--white);
+        font-size: 0.8em;
+        gap: 20px;
+        height: 70px;
+    }
+
+    #sectionRecherche #header img{
+        width: 50px;
+        justify-self: right;
+    }
+
+    #sectionRecherche #formRecherche{
+        display: grid;
+        grid-template-columns: 0.8fr;
+        justify-content: center;
+        gap:20px;
+    }
+
+    #sectionRecherche #formRecherche input,
+    #sectionRecherche #formRecherche select{
+        height: 50px;
+        padding-left: 20px;
+        background-color: var(--lightGrey);
+        border: none;
+        color: var(--grey);
+    }
+
+    #sectionRecherche #prixMinMax {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #sectionRecherche #prixMinMax p{
+        text-align: center;
+        margin: 0;
+        background-color: var(--lightGrey);
+        height: 50px;
+        line-height: 50px;
+        color: var(--grey);
+    }
+
+    #sectionRecherche .button{
+        height: 60px;
+        margin: 80px 0 50px 0;
+    }
+
+/*  sectionListeVehicule */
+    #sectionListeVehicule{
+        border: solid 4px red;
+        margin: 40px;
+    }
+
+
+footer{
+    background-image: none;
+}
+
+@media screen and (min-width: 768px) {
+    #backgroundImage img{
+        position: relative;
+        top:-370px;
+    }
+}
