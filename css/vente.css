@@ -1,9 +1,10 @@
 
 #backgroundImage{
-    position: relative;
-    width: 100%; 
-    overflow: hidden;
-    z-index: -1000;
+    width: 100%;
+}
+
+#contentPage{
+    margin: 0 60px;
 }
 
 /** sectionRecherche **/
@@ -11,14 +12,20 @@
     #sectionRecherche{
         display: flex;
         flex-direction: column;
-        width:90%;
         margin:auto;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+        font-size: 1em;
+    }
+    
+    #sectionRecherche {
+        position: relative;
+        top: -40px;
+
+        background-color: var(--white);
     }
 
     #sectionRecherche #header{
-        position: relative;
-        top: -40px;
+        margin-bottom: 20px;;
         display: grid;
         grid-template-columns: 30% 70%;
         justify-items: left;
@@ -26,7 +33,6 @@
         padding: 20px 0;;
         background-color: var(--black);
         color: var(--white);
-        font-size: 0.8em;
         gap: 20px;
         height: 70px;
     }
@@ -38,23 +44,29 @@
 
     #sectionRecherche #formRecherche{
         display: grid;
-        grid-template-columns: 0.8fr;
+        grid-template-columns: 80%;
         justify-content: center;
         gap:20px;
     }
 
     #sectionRecherche #formRecherche input,
     #sectionRecherche #formRecherche select{
-        height: 50px;
+        height: 40px;
         padding-left: 20px;
         background-color: var(--lightGrey);
         border: none;
         color: var(--grey);
     }
 
+    #sectionRecherche label{
+        position: relative;
+        top: 15px;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+
     #sectionRecherche #prixMinMax {
         display: grid;
-        grid-template-columns: 1fr;
         gap: 20px;
     }
 
@@ -83,9 +95,133 @@ footer{
     background-image: none;
 }
 
+/** 
+    MEDIA QUERIES
+                    **/
+
 @media screen and (min-width: 768px) {
+    #backgroundImage{
+        position: relative;
+        overflow: hidden;
+        z-index: -1000;
+        height: 180px;
+    }
     #backgroundImage img{
         position: relative;
-        top:-370px;
+        top:-220px;
     }
-}
+
+    #contentPage{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 20px;
+        margin: 0 15px;
+    }
+    #contentPage #sectionRecherche{ width: 30%; }
+    
+    #contentPage #sectionRecherche #formRecherche{gap:10px;}
+
+    #contentPage #sectionRecherche #header{
+        height: 30px;
+        font-size:x-small;
+    }
+
+    #contentPage #sectionRecherche #header img{
+        width: 35px;
+    }
+
+    #sectionRecherche #formRecherche input,
+    #sectionRecherche #formRecherche select{
+        height: 30px;
+        font-size: x-small;
+    }
+
+    #sectionRecherche label{
+        position: relative;
+        top: 15px;
+        font-size: small;
+    }
+
+    #sectionRecherche #prixMinMax {
+        display: grid;
+        gap: 10px;
+    }
+
+    #sectionRecherche #prixMinMax p{
+        text-align: center;
+        margin: 0;
+        background-color: var(--lightGrey);
+        height: 30px;
+        line-height: 30px;
+        color: var(--grey);
+        font-size: x-small;
+    }
+
+    #sectionRecherche .button{
+        height: 35px;
+        margin: 30px 0 50px 0;
+        font-size: x-small;
+    }
+
+    #contentPage #sectionListeVehicule{
+        width: 60%;
+        margin-top:100px;
+    }
+
+} /* media 768px */
+
+@media screen and (min-width: 992px) {
+    #contentPage #sectionRecherche{
+        width: 30%;
+        top: -90px;
+    }
+
+    #contentPage #sectionRecherche #formRecherche{gap:15px;}
+
+    #contentPage #sectionRecherche #header{
+        height: 40px;
+        font-size: small;
+    }
+
+    #contentPage #sectionRecherche #header img{
+        width: 35px;
+    }
+
+    #sectionRecherche #formRecherche input,
+    #sectionRecherche #formRecherche select{
+        height: 40px;
+        font-size: small;
+    }
+
+    #sectionRecherche label{
+        position: relative;
+        top: 15px;
+        font-size:medium;
+    }
+
+    #sectionRecherche #prixMinMax {
+        display: grid;
+        gap: 20px;
+    }
+
+    #sectionRecherche #prixMinMax p{
+        text-align: center;
+        margin: 0;
+        background-color: var(--lightGrey);
+        height: 30px;
+        line-height: 30px;
+        color: var(--grey);
+        font-size: medium;
+    }
+
+    #sectionRecherche .button{
+        height: 45px;
+        margin: 30px 0 50px 0;
+        font-size: small;
+    }
+
+    #contentPage #sectionListeVehicule{
+        width: 70%;
+        margin-top:100px;
+    }
+} /* media 992px */

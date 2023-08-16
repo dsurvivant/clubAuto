@@ -71,109 +71,110 @@
         <img src="/images/vente-location.jpg" alt="vehicule">
     </div> 
 
-    <section id="sectionRecherche">
-        <div id="header">
-            <img src="/images/icone-voiture.png" alt="icone voiture">
-            <h2>Rechercher</h2>
-        </div>
-        
-        <form id="formRecherche" action="#" method="get">
-            <select name="selectType" id="selectType">
-                <option value="">Type</option>
-                <option value="berline">Berline</option>
-                <option value="monospace">Monospace</option>
-                <option value="suv">SUV</option>
-                <option value="compacte">Compacte</option>
-                <option value="volante">Volante</option>
-            </select>
-
-            <select name="selectCarburant" id="selectCarburant">
-                <option value="">Carburant</option>
-                <option value="essence">Essence</option>
-                <option value="diesel">Diesel</option>
-                <option value="gpl">GPL</option>
-                <option value="electrique">Electrique</option>
-                <option value="eau">A l'eau</option>
-                <option value="hydrogène">Hydrogène</option>
-                <option value="atomique">Atomique</option>
-            </select>
-
-            <select name="selectMarque" id="selectMarque">
-                <option value="">Marque</option>
-                <option value="renault">Renault</option>
-                <option value="peugeot">Peugeot</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="fiat">Fiat</option>
-                <option value="opel">Opel</option>
-                <option value="other">Et bien d'autres</option>
-                <option value="tous">Tous</option>
-            </select>
-
-            <select name="selectModele" id="selectModel">
-                <option value="">Modèle</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="tous">Tous</option>
-            </select>
-
-            <select name="selectKilometreMax" id="selectKilometreMax">
-                <option value="">Kilométrage maximal</option>
-                <option value="50">0 à 50 000 km</option>
-                <option value="100">50 000 à 100 000 km</option>
-                <option value="150">100 000 à 150 000 km</option>
-                <option value="200">150 000 à 200 000 km</option>
-                <option value="300">200 000 à 300 000 km</option>
-                <option value="toyStory">Vers l'infinie et au delà</option>
-                <option value="tous">Tous</option>
-            </select>
-
-            <select name="selectAncienneté" id="selectAncienneté">
-                <option value="">Ancienneté</option>
-                <option value="jeune">Jeune</option>
-                <option value="vieux">Vieux</option>
-                <option value="unknown">On sait pas trop</option>
-                <option value="tous">Tous</option>
-            </select>
-
-            
-            <label for="inputCurseurPrix">Prix</label>
-            <input type="range" 
-                    name="inputCurseurPrix" 
-                    id="inputCurseurPrix"
-                    min="2000"
-                    max="80000">
-
-            <div id="prixMinMax">
-                <p id="PrixMin">2000</p>
-                <p id="PrixMax">80000</p>
+    <div id="contentPage">
+        <section id="sectionRecherche">
+            <div id="header">
+                <img src="/images/icone-voiture.png" alt="icone voiture">
+                <h2>Rechercher</h2>
             </div>
-                
             
-
-            <button type="submit" class="button">RÉINITIALISER</button>
-        </form>
-
-    </section>
-
-    <section id="sectionListeVehicule">
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-        </ul>
-    </section>
-
-
+            <form id="formRecherche" action="#" method="get">
+                <select name="selectType" id="selectType">
+                    <option value="">Type</option>
+                    <option value="berline">Berline</option>
+                    <option value="monospace">Monospace</option>
+                    <option value="suv">SUV</option>
+                    <option value="compacte">Compacte</option>
+                    <option value="volante">Volante</option>
+                </select>
+    
+                <select name="selectCarburant" id="selectCarburant">
+                    <option value="">Carburant</option>
+                    <option value="essence">Essence</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="gpl">GPL</option>
+                    <option value="electrique">Electrique</option>
+                    <option value="eau">A l'eau</option>
+                    <option value="hydrogène">Hydrogène</option>
+                    <option value="atomique">Atomique</option>
+                </select>
+    
+                <select name="selectMarque" id="selectMarque">
+                    <option value="">Marque</option>
+                    <option value="renault">Renault</option>
+                    <option value="peugeot">Peugeot</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="opel">Opel</option>
+                    <option value="other">Et bien d'autres</option>
+                    <option value="tous">Tous</option>
+                </select>
+    
+                <select name="selectModele" id="selectModel">
+                    <option value="">Modèle</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="tous">Tous</option>
+                </select>
+    
+                <select name="selectKilometreMax" id="selectKilometreMax">
+                    <option value="">Kilométrage maximal</option>
+                    <option value="50">0 à 50 000 km</option>
+                    <option value="100">50 000 à 100 000 km</option>
+                    <option value="150">100 000 à 150 000 km</option>
+                    <option value="200">150 000 à 200 000 km</option>
+                    <option value="300">200 000 à 300 000 km</option>
+                    <option value="toyStory">Vers l'infinie et au delà</option>
+                    <option value="tous">Tous</option>
+                </select>
+    
+                <select name="selectAncienneté" id="selectAncienneté">
+                    <option value="">Ancienneté</option>
+                    <option value="jeune">Jeune</option>
+                    <option value="vieux">Vieux</option>
+                    <option value="unknown">On sait pas trop</option>
+                    <option value="tous">Tous</option>
+                </select>
+    
+                
+                <label for="inputCurseurPrix">Prix</label>
+                <input type="range" 
+                        name="inputCurseurPrix" 
+                        id="inputCurseurPrix"
+                        min="2000"
+                        max="80000">
+    
+                <div id="prixMinMax">
+                    <p id="PrixMin">2000</p>
+                    <p id="PrixMax">80000</p>
+                </div>
+                    
+                
+    
+                <button type="submit" class="button">RÉINITIALISER</button>
+            </form>
+    
+        </section>
+    
+        <section id="sectionListeVehicule">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </section>
+    </div>
+    
     
     <footer>
         <div id="bottomFooter">

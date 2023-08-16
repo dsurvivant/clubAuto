@@ -14,4 +14,4 @@ bugs:
         - contact fini :
             - vérifier w3c
             - vérifier sur différents navigateur, écrans
-            - manque texte dans textarea page contact.html
+            - dans vente programmation double curseur
