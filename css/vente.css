@@ -105,13 +105,11 @@ header #entete_titre{
         border-top: 2px solid var(--lightGrey);
     }
 
-    #sectionListeVehicule .ficheProduit .imageProduit {position: relative;}
-
     #sectionListeVehicule .ficheProduit img {width: 100%; height: auto;}
 
     #sectionListeVehicule .ficheProduit button{
         position: absolute; 
-        bottom: 0;
+        top: -55px;
         right: 0;
         width: 130px;
         height: 50px;;
@@ -127,6 +125,7 @@ header #entete_titre{
         font-weight:600;
         margin: 15px 0;
         color: var(--black);
+        margin-top: 0;
     }
 
     #sectionListeVehicule .ficheProduit .description p{
@@ -236,22 +235,7 @@ footer{
         margin-top:100px;
     }
 
-    #contentPage #sectionListeVehicule .description{ position: relative;}
-
-    /** section listevehicule **/
-    #sectionListeVehicule .ficheProduit img {height: 200px; width:auto;}
-
-    /* #sectionListeVehicule .ficheProduit button{
-        position: absolute;
-        top: -20px;
-        width: 130px;
-        height: 50px;;
-        border-radius: 0;
-        padding: 10px;
-        margin-bottom: 5px;
-        text-align: right;
-        font-size: x-large;
-    } */
+    /* #contentPage #sectionListeVehicule .description{ position: relative;} */
 
 } /* media 768px */
 
@@ -308,5 +292,26 @@ footer{
     #contentPage #sectionListeVehicule{
         width: 70%;
         margin-top:100px;
+    }
+
+    /** section listevehicule **/
+    #sectionListeVehicule .ficheProduit img {
+        float: left;
+        height: 200px; 
+        width:auto;
+        margin-right: 10px;;
+    }
+
+    #sectionListeVehicule .ficheProduit button{
+        position: relative;
+        float: right;
+        top: 0;
+        width: 130px;
+        height: 50px;;
+        border-radius: 0;
+        padding: 10px;
+        margin-bottom: 5px;
+        text-align: right;
+        font-size: x-large;
     }
 } /* media 992px */
