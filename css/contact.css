@@ -1,3 +1,11 @@
+header{ margin-top: 30px;padding-bottom: 30px;}
+
+header #entete_titre{
+    position: absolute;
+    display: block;
+    padding: 10px;
+}
+
 #backgroundImage{
     position: absolute;
     width: 100%; 
@@ -5,11 +13,6 @@
     overflow: hidden;
     z-index: -1000;
 }
-
-/**
-#backgroundImage img {
-    display:block; width: 100%;
-}**/
 
 #cadreContact{
     position: relative;
@@ -71,9 +74,16 @@ footer{
     top: 150px;
     background-image: none;
 }
-
-/**  MEDIA QUERIES **/
+/************************
+     MEDIA QUERIES 
+*************************/
 @media screen and (min-width: 768px) {
+
+    header #entete_titre{
+        position: relative;
+        padding: 0;
+    }
+
    #formContact{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);

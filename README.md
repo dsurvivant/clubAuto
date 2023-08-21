@@ -15,3 +15,5 @@ bugs:
             - vérifier w3c
             - vérifier sur différents navigateur, écrans
             - dans vente programmation double curseur
+        - favicon
+        - manque contact dans l'entête

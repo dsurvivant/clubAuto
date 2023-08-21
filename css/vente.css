@@ -1,10 +1,33 @@
+header{padding-bottom: 30px;}
 
-#backgroundImage{
-    width: 100%;
+header #entete_titre{
+    position: absolute;
+    display: block;
+    padding: 10px;
+}
+#backgroundImage{position: relative; width: 100%; }
+
+#backgroundImage h1 {
+    position: absolute;
+    top: 30%;
+    margin: 20px;
+    color: var(--white);
+    font-size: 2.5em;
+    font-weight: 600;
 }
 
 #contentPage{
-    margin: 0 60px;
+    margin: 0 20px;
+    font-size: small;
+}
+
+#contentPage input,
+#contentPage select{
+    height: 40px;
+    padding-left: 20px;
+    background-color: var(--lightGrey);
+    border: none;
+    color: var(--grey);
 }
 
 /** sectionRecherche **/
@@ -13,8 +36,7 @@
         display: flex;
         flex-direction: column;
         margin:auto;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-        font-size: 1em;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
     }
     
     #sectionRecherche {
@@ -49,15 +71,6 @@
         gap:20px;
     }
 
-    #sectionRecherche #formRecherche input,
-    #sectionRecherche #formRecherche select{
-        height: 40px;
-        padding-left: 20px;
-        background-color: var(--lightGrey);
-        border: none;
-        color: var(--grey);
-    }
-
     #sectionRecherche label{
         position: relative;
         top: 15px;
@@ -70,36 +83,85 @@
         gap: 20px;
     }
 
-    #sectionRecherche #prixMinMax p{
+    #sectionRecherche #prixMinMax input{
         text-align: center;
-        margin: 0;
-        background-color: var(--lightGrey);
-        height: 50px;
-        line-height: 50px;
-        color: var(--grey);
     }
 
     #sectionRecherche .button{
-        height: 60px;
-        margin: 80px 0 50px 0;
+        height: 50px;
+        margin: 50px 0 50px 0;
     }
 
 /*  sectionListeVehicule */
     #sectionListeVehicule{
-        border: solid 4px red;
-        margin: 40px;
+        display: grid;
+        gap:40px;
     }
 
+    #sectionListeVehicule select{ width: 50%}
+
+    #sectionListeVehicule .ficheProduit{
+        padding-top: 30px;;
+        border-top: 2px solid var(--lightGrey);
+    }
+
+    #sectionListeVehicule .ficheProduit .imageProduit {position: relative;}
+
+    #sectionListeVehicule .ficheProduit img {width: 100%; height: auto;}
+
+    #sectionListeVehicule .ficheProduit button{
+        position: absolute; 
+        bottom: 0;
+        right: 0;
+        width: 130px;
+        height: 50px;;
+        border-radius: 0;
+        padding: 10px;
+        margin-bottom: 5px;
+        text-align: right;
+        font-size: x-large;
+    }
+
+    #sectionListeVehicule .ficheProduit .description h3 {
+        font-size: 2em;
+        font-weight:600;
+        margin: 15px 0;
+        color: var(--black);
+    }
+
+    #sectionListeVehicule .ficheProduit .description p{
+        color: var(--grey);
+        font-size: 1.3em;
+        font-weight: 400;
+        line-height: 1.5em;
+    }
+
+    #sectionListeVehicule .ficheProduit a{
+        color: var(--black);
+        font-size: 1.3em;
+        text-decoration: none;
+    }
+
+    #sectionListeVehicule .ficheProduit a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        font-size: 1.6em;
+    }
 
 footer{
     background-image: none;
 }
 
-/** 
-    MEDIA QUERIES
-                    **/
+/*************************************************************************
+                            MEDIA QUERIES
+**************************************************************************/
 
 @media screen and (min-width: 768px) {
+
+    header #entete_titre{
+        position: relative;
+        padding: 0;
+    }
     #backgroundImage{
         position: relative;
         overflow: hidden;
@@ -108,22 +170,32 @@ footer{
     }
     #backgroundImage img{
         position: relative;
-        top:-220px;
+        top:-450px;
+    }
+
+    #backgroundImage h1 {
+        z-index: 100;
+        top: 10%;
+        left: 10%;
     }
 
     #contentPage{
         display: flex;
         flex-direction: row-reverse;
+        align-items: start;
         margin: 0 20px;
         margin: 0 15px;
+
     }
-    #contentPage #sectionRecherche{ width: 30%; }
+    #contentPage #sectionRecherche{
+        margin: 0 20px;
+        width: 30%; 
+    }
     
     #contentPage #sectionRecherche #formRecherche{gap:10px;}
 
     #contentPage #sectionRecherche #header{
         height: 30px;
-        font-size:x-small;
     }
 
     #contentPage #sectionRecherche #header img{
@@ -133,13 +205,11 @@ footer{
     #sectionRecherche #formRecherche input,
     #sectionRecherche #formRecherche select{
         height: 30px;
-        font-size: x-small;
     }
 
     #sectionRecherche label{
         position: relative;
         top: 15px;
-        font-size: small;
     }
 
     #sectionRecherche #prixMinMax {
@@ -154,13 +224,11 @@ footer{
         height: 30px;
         line-height: 30px;
         color: var(--grey);
-        font-size: x-small;
     }
 
     #sectionRecherche .button{
         height: 35px;
         margin: 30px 0 50px 0;
-        font-size: x-small;
     }
 
     #contentPage #sectionListeVehicule{
@@ -168,11 +236,28 @@ footer{
         margin-top:100px;
     }
 
+    #contentPage #sectionListeVehicule .description{ position: relative;}
+
+    /** section listevehicule **/
+    #sectionListeVehicule .ficheProduit img {height: 200px; width:auto;}
+
+    /* #sectionListeVehicule .ficheProduit button{
+        position: absolute;
+        top: -20px;
+        width: 130px;
+        height: 50px;;
+        border-radius: 0;
+        padding: 10px;
+        margin-bottom: 5px;
+        text-align: right;
+        font-size: x-large;
+    } */
+
 } /* media 768px */
 
 @media screen and (min-width: 992px) {
     #contentPage #sectionRecherche{
-        width: 30%;
+        width: 25%;
         top: -90px;
     }
 
