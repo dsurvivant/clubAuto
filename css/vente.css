@@ -96,7 +96,10 @@ header #entete_titre{
     #sectionListeVehicule{
         display: grid;
         gap:40px;
+        color: var(--grey);
     }
+
+    #sectionListeVehicule label{ display: none;}
 
     #sectionListeVehicule select{ width: 50%}
 
@@ -156,6 +159,8 @@ footer{
 **************************************************************************/
 
 @media screen and (min-width: 768px) {
+
+    header{padding-bottom: 0;}
 
     header #entete_titre{
         position: relative;
@@ -295,6 +300,9 @@ footer{
     }
 
     /** section listevehicule **/
+
+    #sectionListeVehicule label{ display: inline;}
+    
     #sectionListeVehicule .ficheProduit img {
         float: left;
         height: 200px; 

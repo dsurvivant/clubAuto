@@ -1,4 +1,4 @@
-header{ margin-top: 30px;padding-bottom: 30px;}
+header{padding-bottom: 30px;}
 
 header #entete_titre{
     position: absolute;
@@ -21,7 +21,7 @@ header #entete_titre{
     padding: 40px;
     margin: Auto;
     width: 60%;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 #cadreContact h1{
@@ -78,6 +78,8 @@ footer{
      MEDIA QUERIES 
 *************************/
 @media screen and (min-width: 768px) {
+
+    header{padding-bottom: 0;}
 
     header #entete_titre{
         position: relative;

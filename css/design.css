@@ -107,7 +107,10 @@ img{
         flex-direction: column;
     }
 
-    header nav { display: none;position:absolute;}
+    header nav { 
+        display: none;
+        position:absolute;
+    }
 
     header ul{
         margin: 0;
