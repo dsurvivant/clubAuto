@@ -17,3 +17,4 @@ bugs:
             - dans vente programmation double curseur
         - favicon
         - manque contact dans l'entête
+        - mettre de l'ordre dans les h1 h2..

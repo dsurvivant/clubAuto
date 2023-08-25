@@ -1,0 +1,71 @@
+
+header #entete_titre{
+    position: absolute;
+    display: block;
+    padding: 10px;
+}
+
+#pageContent{
+    padding: 30px;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+#pageContent #navFilAriane{
+    color: var(--grey);
+    font-weight: 300;
+}
+
+#pageContent #navFilAriane a{
+    text-decoration: none;
+    color: var(--grey);
+}
+
+#pageContent #navFilAriane a:hover{
+    text-decoration: underline;
+}
+
+#pageContent #navDescriptionVoiture ul{
+    list-style-type: none;
+    padding: 0 10px;
+    text-align: center;
+    background-color: var(--black);
+}
+
+#pageContent #navDescriptionVoiture a{
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 20px;
+    margin: 0 5px;
+}
+
+#pageContent #navDescriptionVoiture a:hover{
+    position: relative;
+    top: -8px;
+    color: var(--black);
+    background-color: var(--white);
+    border-top: 8px solid var(--brown);
+}
+
+#pageContent #options ul{
+   list-style-type: none;
+   padding: 0;
+}
+
+#pageContent #options ul li{
+    height: 30px;
+    line-height: 30px;
+    margin: 10px;
+}
+
+#pageContent #options ul img{
+    float: left;
+    width: 30px;
+    height: auto;
+}
+
+footer{
+    background-image: none;
+}
