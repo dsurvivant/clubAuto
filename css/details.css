@@ -1,3 +1,4 @@
+header{padding-bottom: 30px;}
 
 header #entete_titre{
     position: absolute;
@@ -14,6 +15,9 @@ header #entete_titre{
 #pageContent #navFilAriane{
     color: var(--grey);
     font-weight: 300;
+    border-bottom: 2px solid var(--grey);
+    margin: 40px 0;
+    padding-bottom: 30px;
 }
 
 #pageContent #navFilAriane a{
@@ -25,28 +29,58 @@ header #entete_titre{
     text-decoration: underline;
 }
 
-#pageContent #navDescriptionVoiture ul{
+#pageContent #descriptionVoiture h2{
+    font-size: 2em;
+    padding: 20px 0;
+}
+
+#pageContent #descriptionVoiture nav ul{
     list-style-type: none;
     padding: 0 10px;
     text-align: center;
     background-color: var(--black);
+    font-size: 1.3em;
+    font-weight: 600;
 }
 
-#pageContent #navDescriptionVoiture a{
+#pageContent #descriptionVoiture nav li{
+    position: relative;
+    top: -8px;
+}
+
+#pageContent #descriptionVoiture nav a{
     display: block;
     text-decoration: none;
     color: var(--white);
-    background-color: var(--black);
-    padding: 20px;
-    margin: 0 5px;
+    height: 92px;
+    line-height: 90px;
 }
 
-#pageContent #navDescriptionVoiture a:hover{
-    position: relative;
-    top: -8px;
+#pageContent #descriptionVoiture nav a:hover{
     color: var(--black);
     background-color: var(--white);
     border-top: 8px solid var(--brown);
+}
+
+#pageContent #description{
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+#pageContent #technique{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+#pageContent #technique em{
+    display: block;
+    color: var(--grey);
+    border-left: 7px solid var(--brown);
+    padding-left: 40px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.2em;
+    line-height: 30px;;
 }
 
 #pageContent #options ul{
@@ -60,6 +94,10 @@ header #entete_titre{
     margin: 10px;
 }
 
+#pageContent #options h3{
+    font-size: 1.5em;
+}
+
 #pageContent #options ul img{
     float: left;
     width: 30px;
@@ -69,3 +107,53 @@ header #entete_titre{
 footer{
     background-image: none;
 }
+/********************************************
+        MEDIA SCREEN
+*********************************************/
+
+@media screen and (min-width:768px) {
+    header{padding-bottom: 0;}
+
+    header #entete_titre{
+        position: relative;
+        padding: 0;
+    }
+
+    header nav { position: relative;}
+    
+    header ul{opacity: 1;}
+}
+
+@media screen and (min-width: 992px)  
+{
+    
+    
+    #pageContent #navFilAriane{
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #pageContent{
+        width: 50%;
+    }
+
+    #pageContent #descriptionVoiture nav ul{
+        display: flex;
+        font-size: 0.8em;
+        height: 44px;
+    }
+
+    #pageContent #descriptionVoiture nav a{
+        display: block;
+        text-decoration: none;
+        border-top: 8px solid var(--white);
+        color: var(--white);
+        height: 52px;
+        line-height: 50px;
+        padding: 0 10px;
+    }
+
+
+    
+}/* fin media screen 992 */
