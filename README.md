@@ -10,7 +10,6 @@ bugs:
 
     accueil:
         - la bannière pris disparait sur très grand écran (overflow)
-        - les liens menu sont en bleu
         - contact fini :
             - vérifier w3c
             - vérifier sur différents navigateur, écrans

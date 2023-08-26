@@ -41,6 +41,11 @@ em { color: var(--brown); font-style: normal;}
     font-size: 1.2em;
 }
 
+.button a{
+    text-decoration: none;
+    color: var(--white);
+}
+
 .prix {
     display:flex;
     flex-direction: column;
@@ -108,8 +113,11 @@ img{
     }
 
     header nav { 
-        display: none;
-        position:absolute;
+        position: absolute;
+        right: 0;
+        top:100px;
+        /* display: none; */
+        z-index: 200;
     }
 
     header ul{
@@ -121,13 +129,20 @@ img{
         background-color: var(--lightGrey);
         color: var(--black);
         font-size: 1.6em;
-        width:50%;
+        width: 150px;
+        height: 300px;
     }
 
-    header li{ padding: 10px; }
+    header li a{
+        display: block;
+        text-decoration: none;
+        color:var(--black);
+        font-weight: 400;
+        padding: 10px;
+    }
 
-    header li:hover{
-        background-color: var(--yellow);
+    header li a:hover{
+        background-color: var(--brown);
         color: white;
         opacity: 1;
     }
@@ -384,6 +399,8 @@ img{
             align-self: center;
         }
 
+        /* header nav{top: 150;} */
+
         header #btn_burger{ display: none; }
 
         header img{
@@ -398,8 +415,10 @@ img{
         header #telephone{ font-size: 1em; }
 
         header #reseaux{display: flex;}
+
+        header #containerNav{position: relative;}
         
-        header nav {display: block;width: 100%;}
+        header nav {width: 100%;top:0;}
 
         header ul{
             flex-direction: row;
@@ -407,8 +426,8 @@ img{
             font-size: 1.2em;
             width: 100%;
             font-weight: 600;
-            height: 40px;
-            opacity: 0.7;
+            height: auto;
+            opacity: 0.8;
         }
         
         header nav +img { display: block; }
