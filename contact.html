@@ -2,11 +2,15 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Venez acheter ou louer un de nos véhicules. Service et voitures de qualité.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/design.css">
     <link rel="stylesheet" href="css/contact.css">
     <title>Club Auto</title>
+    <script src="/js/jquery-3.7.0.min.js" defer></script>
+    <script src="/js/menu.js" defer></script>
 </head>
 <body>
     <header>
@@ -55,7 +59,7 @@
 
         <!-- NAVIGATION -->
         <div id="containerNav">
-            <nav>
+            <nav id="mainNav">
                 <ul>
                     <li><a href="index.html">ACCUEIL</a></li>
                     <li><a href="vente.html">VENTE</a></li>
@@ -76,7 +80,7 @@
 
         <form id="formContact" action="#" method="get">
 
-            <section id="sectionCoordonnees">
+            <div id="sectionCoordonnees">
                 <div>
                     <label for="prenom">Prénom*</label>
                     <input id="prenom" type="text" placeholder="Entrez votre prénom" name="prenom">
@@ -96,12 +100,12 @@
                     <label for="phoneNumber">Téléphone</label>
                     <input id="phoneNumber" type="number" placeholder=" Phone number" name="phoneNumber">
                 </div>
-            </section>
+            </div>
             
-            <section id="sectionMessage">
+            <div id="sectionMessage">
                 <label for="message">Message</label>
                 <textarea id="message" name="message" placeholder="Ecrivez votre message"></textarea>
-            </section>
+            </div>
             
             <button class="button" type="submit">Envoyez</button>
         </form>

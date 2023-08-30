@@ -1,9 +1,7 @@
-header{padding-bottom: 30px;}
 
 header #entete_titre{
     position: absolute;
     display: block;
-    padding: 10px;
 }
 
 #backgroundImage{

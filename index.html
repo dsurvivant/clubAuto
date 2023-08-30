@@ -2,10 +2,14 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Venez acheter ou louer un de nos véhicules. Service et voitures de qualité.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/design.css">
     <title>Club Auto</title>
+    <script src="/js/jquery-3.7.0.min.js" defer></script>
+    <script src="/js/menu.js" defer></script>
 </head>
 <body>
     <header>
@@ -52,9 +56,12 @@
             </div>
         </div>
 
+        <!-- SLOGAN -->
+        <h1 id="mainTitre">CLUB AUTO <em>LE MEILLEUR DE L'AUTOMOBILE</em></h1>
+
         <!-- NAVIGATION -->
         <div id="containerNav">
-            <nav>
+            <nav id="mainNav">
                 <ul>
                     <li><a href="index.html">ACCUEIL</a></li>
                     <li><a href="vente.html">VENTE</a></li>
@@ -65,15 +72,13 @@
             <img src="images/vehicule1.jpg" alt="">
         </div>
 
-        <!-- SLOGAN -->
-        <h1 id="mainTitre">CLUB AUTO <em>LE MEILLEUR DE L'AUTOMOBILE</em></h1>
     </header>
 
     <section id="presentation">
         <img src="images/clients.jpg" alt="happyClients">
 
         <div>
-            <h1>BIENVENUE CHEZ <em>CLUB AUTO</em></h1>
+            <h2>BIENVENUE CHEZ <em>CLUB AUTO</em></h2>
             <p>
                 <strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, voluptate. Deserunt inventore laboriosam voluptas eveniet libero veniam, quidem dolore?</strong>
             </p>
@@ -84,7 +89,7 @@
         </div>
 
         <div>
-            <h1>LE MEILLEUR DE L'AUTOMOBILE</h1>
+            <h2>LE MEILLEUR DE L'AUTOMOBILE</h2>
             <hr>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, sequi. Expedita non eos officiis exercitationem rerum beatae accusantium qui minus laudantium quo nulla, quidem fugit aut aperiam quis modi, aliquam maiores ipsum! Aperiam ipsum quae consequatur eveniet, ipsam nobis cumque sapiente ut earum vitae fuga incidunt, culpa labore. Amet libero odit, perspiciatis eos repellendus excepturi dolores qui!
@@ -118,7 +123,7 @@
         <div id="modelesVoitures">
             <h2>VEHICULES RECENTS</h2>
     
-            <section id="listeVoitures">
+            <div id="listeVoitures">
                 <div>
                     <img src="images/vehicule2.jpg" alt="vehicule">
                     <div>
@@ -151,7 +156,7 @@
                         </p>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     </section>
 
@@ -200,10 +205,7 @@
             </div>
         </div>
 
-        <button class="button">
-            <a href="contact.html">CONTACTEZ NOUS</a>
-        </button>
-
+        <a class="button" href="contact.html">CONTACTEZ NOUS</a>
     </section>
 
     <footer>

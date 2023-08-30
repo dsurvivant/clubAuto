@@ -39,11 +39,7 @@ em { color: var(--brown); font-style: normal;}
     color: var(--white);
     font-weight:bolder;
     font-size: 1.2em;
-}
-
-.button a{
     text-decoration: none;
-    color: var(--white);
 }
 
 .prix {
@@ -78,7 +74,6 @@ img{
         font-weight: bold;
         font-size: 0.7em;
         padding-top: 30px;
-        padding-left: 20px;
     }
 
     header #adresse, 
@@ -86,6 +81,18 @@ img{
     header #reseaux,
     header nav +img {
         display: none;
+    }
+
+    header #entete_titre, 
+    header #btn_burger,
+    header #telephone,
+    header #mainTitre,
+    header #containerNav{
+        padding: 30px;
+    }
+
+    header #btn_burger img:hover{
+        cursor: pointer;
     }
 
     header #entete_titre{
@@ -112,13 +119,30 @@ img{
         flex-direction: column;
     }
 
-    header nav { 
+    /* header nav { 
         position: absolute;
         right: 0;
         top:100px;
-        /* display: none; */
+        display: none;
         z-index: 200;
-    }
+    } */
+
+    header #containerNav{position: relative;}
+        
+    header nav {
+        width: 100%;
+        display: none;
+        top:0;}
+
+    /* header ul{
+        flex-direction: row;
+        justify-content: end;
+        font-size: 1.2em;
+        width: 100%;
+        font-weight: 600;
+        height: auto;
+        opacity: 0.8;
+    } */
 
     header ul{
         margin: 0;
@@ -126,17 +150,15 @@ img{
         display: flex;
         flex-direction: column;
         list-style-type: none;
-        background-color: var(--lightGrey);
-        color: var(--black);
+        background-color: var(--black);
         font-size: 1.6em;
-        width: 150px;
-        height: 300px;
+        width: 100%;
     }
 
     header li a{
         display: block;
         text-decoration: none;
-        color:var(--black);
+        color:var(--white);
         font-weight: 400;
         padding: 10px;
     }
@@ -292,10 +314,14 @@ img{
         color: var(--grey)
     }
 
-    #contacterNous button{
+    #contacterNous .button{
         margin: 30px auto;
         width: 250px;
         height: 40px;
+        text-decoration: none;
+        color: var(--white);
+        text-align: center;
+        line-height: 40px;;
     }
 
 /** bloc5 : footer **/
@@ -399,8 +425,6 @@ img{
             align-self: center;
         }
 
-        /* header nav{top: 150;} */
-
         header #btn_burger{ display: none; }
 
         header img{
@@ -416,11 +440,15 @@ img{
 
         header #reseaux{display: flex;}
 
-        header #containerNav{position: relative;}
+        header #containerNav{position: relative;padding: 0;}
         
-        header nav {width: 100%;top:0;}
+        header nav {
+            display: block !important;
+            width: 100%;
+            top:0;}
 
         header ul{
+            position: absolute;
             flex-direction: row;
             justify-content: end;
             font-size: 1.2em;
@@ -428,7 +456,9 @@ img{
             font-weight: 600;
             height: auto;
             opacity: 0.8;
+            background-color: var(--lightGrey);
         }
+        header li a{color:var(--black);}
         
         header nav +img { display: block; }
 
