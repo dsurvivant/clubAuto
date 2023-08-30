@@ -18,6 +18,8 @@ bugs:
         - retour à l'accueil si clic sur titre
         -changement d'état des boutons
         -sitemap
+        - accessibilité
+        - seo
 
     w3c:
 
